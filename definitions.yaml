@@ -1,6 +1,6 @@
 markdown:
   languageIds: [markdown]
-  simpleIcons: markdown
+  tablerIcons: info-circle
   color: "#FFFFFF"
 abap:
   languageIds: [abap]
@@ -38,21 +38,19 @@ css:
   languageIds: [css, xsl]
   simpleIcons: css3
   color: "#1572B6"
-# diff:
-#   languageIds: [diff]
-#   simpleIcons: diff
-#   color: ""
+diff:
+  languageIds: [diff, patch]
+  tablerIcons: file-diff
+  color: "#FFFFFF"
 dockerfile:
   languageIds: [dockerfile]
   simpleIcons: docker
   color: "#2496ED"
-# fsharp:
-#   languageIds: [fsharp]
-#   simpleIcons: fsharp
-#   color: ""
 git:
   languageIds: [git]
   simpleIcons: git
+  fileNames:
+    - ".gitignore"
   color: "#F05032"
 go:
   languageIds: [go]
@@ -86,9 +84,14 @@ javascriptreact:
   languageIds: [javascriptreact, typescriptreact]
   simpleIcons: react
   color: "#61DAFB"
+webpack:
+  fileNames:
+    - webpack.config.js
+  simpleIcons: webpack
+  color: "#8DD6F9"
 json:
   languageIds: [json, jsonc]
-  simpleIcons: json
+  tablerIcons: braces
   color: "#FFFFFF"
 # less:
 #   languageIds: [less]
@@ -125,13 +128,18 @@ powershell:
 python:
   languageIds: [python]
   simpleIcons: python
-  color: "#3776AB"
+  color: "#98d800"
+jupyter:
+  fileExtensions:
+    - ipynb
+  simpleIcons: jupyter
+  color: "#F37626"
 r:
   languageIds: [r]
   simpleIcons: r
   color: "#276DC3"
 dotnet:
-  languageIds: [razor]
+  languageIds: [razor, fsharp]
   simpleIcons: dot-net
   color: "#aa7bdf"
 ruby:
@@ -164,29 +172,88 @@ swift:
   color: "#FA7343"
 typescript:
   languageIds: [typescript]
+  fileNames:
+    - "tsconfig.json"
   simpleIcons: typescript
   color: "#007ACC"
 # vb:
 #   languageIds: [vb]
 #   simpleIcons: vb
 #   color: ""
-# xml:
-#   languageIds: [xml]
-#   simpleIcons: xml
-#   color: ""
-# yaml:
-#   languageIds: [yaml]
-#   simpleIcons: yaml
-#   color: ""
-code:
-  folderNames: [".vscode"]
-  simpleIcons: visualstudiocode
-  color: "#007ACC"
-github:
-  folderNames: [".github"]
-  simpleIcons: github
-  color: "#b4b3b3"
+kubernetes:
+  folderNames:
+    - "kustomize.yaml"
+  simpleIcons: "kubernetes"
+  color: "#326CE5"
+yaml:
+  languageIds: [yaml]
+  tablerIcons: braces
+  color: "#FFFFFF"
 file:
   file: true
   tablerIcons: file
   color: "#FFFFFF"
+license:
+  tablerIcons: license
+  fileNames:
+    - License
+    - LICENSE
+  color: "#FFFFFF"
+image:
+  tablerIcons: photo
+  fileExtensions:
+    - png
+    - svg
+    - jpeg
+    - jpg
+    - gif
+    - bmp
+  color: "#FFFFFF"
+svg:
+  simpleIcons: svg
+  fileExtensions:
+    - svg
+  color: "#FFB13B"
+npm:
+  tablerIcons: package
+  fileNames:
+    - package.json
+    - package-lock.json
+  color: "#339933"
+yarn:
+  simpleIcons: yarn
+  fileNames:
+    - yarn.lock
+  color: "#2C8EBB"
+compress:
+  tablerIcons: box
+  fileExtensions:
+    - tar
+    - zip
+    - gz
+    - lzh
+    - gzip
+    - tgz
+  color: "#D0D0D0"
+log:
+  tablerIcons: file-text
+  fileExtensions:
+    - log
+  color: "#D0D0D0"
+setting:
+  tablerIcons: settings
+  fileExtensions:
+    - envrc
+    - plist
+  color: "#FFFFFF"
+vim:
+  simpleIcons: vim
+  color: "#019733"
+  fileExtensions:
+    - vim
+    - vimrc
+rubygems:
+  simpleIcons: rubygems
+  color: "#E9573F"
+  fileExtensions:
+    - gem
