@@ -50,7 +50,7 @@ dockerfile:
 #   languageIds: [fsharp]
 #   simpleIcons: fsharp
 #   color: ""
-git-commit and git-rebase:
+git:
   languageIds: [git]
   simpleIcons: git
   color: "#F05032"
@@ -142,7 +142,7 @@ rust:
   languageIds: [rust]
   simpleIcons: rust
   color: "#FFFFFF"
-scss (syntax using curly brackets), sass (indented syntax):
+scss:
   languageIds: [scss]
   simpleIcons: sass
   color: "#CC6699"
@@ -186,3 +186,7 @@ github:
   folderNames: [".github"]
   simpleIcons: github
   color: "#b4b3b3"
+file:
+  file: true
+  tablerIcons: file
+  color: "#FFFFFF"

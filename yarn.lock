@@ -57,6 +57,11 @@ source-map@^0.6.0:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+tabler-icons@^1.28.0:
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/tabler-icons/-/tabler-icons-1.28.0.tgz#08f0a343ccba6e203f394e2ea4fc247cf9ab41a4"
+  integrity sha512-uJSA6JzMJ+yUqDOcgzPXDs8tr8wqI0H19qv7NHyLh6CuRkk+RxJP4Zqp52mX/fr2OTN3Zx9OIMHXJbskWQSV8g==
+
 ts-node@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.0.0.tgz#e7699d2a110cc8c0d3b831715e417688683460b3"

@@ -10,6 +10,9 @@
         "simpleIcons": {
           "type": "string"
         },
+        "tablerIcons": {
+          "type": "string"
+        },
         "color": {
           "type": "string"
         },

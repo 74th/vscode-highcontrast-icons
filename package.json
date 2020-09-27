@@ -14,8 +14,8 @@
     "iconThemes": [
       {
         "id": "high-contrast-icons",
-        "label": "High Contrast",
-        "path": "fileicons/definitions.json"
+        "label": "High Contrast Icons",
+        "path": "./fileicons/definitions.json"
       }
     ]
   },
@@ -30,5 +30,7 @@
   "scripts": {
     "build": "ts-node build.ts"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tabler-icons": "^1.28.0"
+  }
 }
