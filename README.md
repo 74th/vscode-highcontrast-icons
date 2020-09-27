@@ -1,13 +1,8 @@
-# README
-## This is the README for your extension "high-contrast-icon"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# High Contrast File Icon Theme for VS Code
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+- folder: [google/material-design-icons](https://github.com/google/material-design-icons) (Apache License)
+- others: [simple-icons](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) (CC0 1.0 Unicersal)
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## License
 
-**Enjoy!**
+Apache License

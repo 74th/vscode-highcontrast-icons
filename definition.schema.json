@@ -1,0 +1,52 @@
+{
+  "$id": "https://github.com/74th/vscode-highcontrast-icons/definition.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VS Code Icon Theme Generator Definition",
+  "type": "object",
+  "patternProperties": {
+    ".*": {
+      "type": "object",
+      "properties": {
+        "simpleIcons": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "folderNames": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fileExtensions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fileNames": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "languageIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "file": {
+          "type": "string"
+        },
+        "folder": {
+          "type": "string"
+        },
+        "folderExpanded": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

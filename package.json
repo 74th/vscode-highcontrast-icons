@@ -1,21 +1,34 @@
 {
-    "name": "high-contrast-icon",
-    "displayName": "high-contrast-icon",
-    "description": "icons for high contrast themes",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.49.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "high contrast icons",
-                "uiTheme": "hc-black",
-                "path": "./themes/high contrast icons-color-theme.json"
-            }
-        ]
-    }
+  "name": "high-contrast-icons",
+  "displayName": "high contrast icons",
+  "description": "icons for high contrast themes",
+  "license": "apache 2.0",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.49.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "high-contrast-icons",
+        "label": "High Contrast",
+        "path": "fileicons/definitions.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/xml": "^1.0.5",
+    "simple-icons": "^3.9.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "xml-js": "^1.6.11",
+    "yaml": "^1.10.0"
+  },
+  "scripts": {
+    "build": "npm ts-node build.ts"
+  },
+  "dependencies": {}
 }
