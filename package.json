@@ -21,16 +21,19 @@
   },
   "devDependencies": {
     "@types/xml": "^1.0.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.2",
     "simple-icons": "^3.9.0",
+    "tabler-icons": "^1.28.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3",
     "xml-js": "^1.6.11",
     "yaml": "^1.10.0"
   },
   "scripts": {
-    "build": "ts-node build.ts"
+    "build": "run-s build:icons",
+    "build:icons": "ts-node build.ts",
+    "build:prettier": "prettier -w fileicons/definitions.json definitions.html"
   },
-  "dependencies": {
-    "tabler-icons": "^1.28.0"
-  }
+  "dependencies": {}
 }

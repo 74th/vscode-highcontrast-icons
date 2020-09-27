@@ -13,7 +13,7 @@ interface FileIconSet {
             fontId?: string,
         }
     },
-    fonts: {
+    fonts?: {
         id: string,
         src: { path: string, format: string }[],
     }[],
@@ -66,15 +66,15 @@ async function main() {
 
     const manifest = {
         iconDefinitions: {},
-        fonts: [
-            // {
-            //     id: "material-icons",
-            //     src: [{
-            //         path: "../material-design-icons/font/MaterialIconsOutlined-Regular.otf",
-            //         format: "otf"
-            //     }]
-            // }
-        ],
+        // fonts: [
+        //     {
+        //         id: "material-icons",
+        //         src: [{
+        //             path: "../material-design-icons/font/MaterialIconsOutlined-Regular.otf",
+        //             format: "otf"
+        //         }]
+        //     }
+        // ],
         folderNames: {},
         fileExtensions: {},
         fileNames: {},
@@ -90,7 +90,7 @@ async function main() {
     html += `</head><body><ul>`;
 
 
-    const defs = yaml.parse((await fs.readFile("definition.yaml")).toString()) as { [index: string]: Definition }
+    const defs = yaml.parse((await fs.readFile("definitions.yaml")).toString()) as { [index: string]: Definition }
 
     for (const name in defs) {
 
