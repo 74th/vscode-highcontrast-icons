@@ -2,3 +2,187 @@ markdown:
   languageIds: [markdown]
   simpleIcons: markdown
   color: "#FFFFFF"
+abap:
+  languageIds: [abap]
+  simpleIcons: sap
+  color: "#5ccaef"
+bat:
+  languageIds: [bat]
+  simpleIcons: windows
+  color: "#5ccaef"
+latex:
+  languageIds: [tex, lates, bibtex]
+  simpleIcons: latex
+  color: "#4ecece"
+clojure:
+  languageIds: [clojure]
+  simpleIcons: clojure
+  color: "#5881D8"
+coffeescript:
+  languageIds: [coffeescript]
+  simpleIcons: coffeescript
+  color: "#b3a19f"
+c:
+  languageIds: [c, "objective-c"]
+  simpleIcons: c
+  color: "#C5D0DD"
+cpp:
+  languageIds: [cpp, "objective-cpp"]
+  simpleIcons: cplusplus
+  color: "#0094FF"
+csharp:
+  languageIds: [csharp]
+  simpleIcons: csharp
+  color: "#239120"
+css:
+  languageIds: [css, xsl]
+  simpleIcons: css3
+  color: "#1572B6"
+# diff:
+#   languageIds: [diff]
+#   simpleIcons: diff
+#   color: ""
+dockerfile:
+  languageIds: [dockerfile]
+  simpleIcons: docker
+  color: "#2496ED"
+# fsharp:
+#   languageIds: [fsharp]
+#   simpleIcons: fsharp
+#   color: ""
+git-commit and git-rebase:
+  languageIds: [git]
+  simpleIcons: git
+  color: "#F05032"
+go:
+  languageIds: [go]
+  simpleIcons: go
+  color: "#00ADD8"
+groovy:
+  languageIds: [groovy]
+  simpleIcons: groovy
+  color: "#4298B8"
+# handlebars:
+#   languageIds: [handlebars]
+#   simpleIcons: handlebars
+#   color: ""
+html:
+  languageIds: [html]
+  simpleIcons: html5
+  color: "#E34F26"
+# ini:
+#   languageIds: [ini]
+#   simpleIcons: ini
+#   color: ""
+java:
+  languageIds: [java]
+  simpleIcons: java
+  color: "#34a7ca"
+javascript:
+  languageIds: [javascript]
+  simpleIcons: javascript
+  color: "#F7DF1E"
+javascriptreact:
+  languageIds: [javascriptreact, typescriptreact]
+  simpleIcons: react
+  color: "#61DAFB"
+json:
+  languageIds: [json, jsonc]
+  simpleIcons: json
+  color: "#FFFFFF"
+# less:
+#   languageIds: [less]
+#   simpleIcons: less
+#   color: ""
+lua:
+  languageIds: [lua]
+  simpleIcons: lua
+  color: "#aeaff4"
+makefile:
+  languageIds: [makefile]
+  simpleIcons: gnu
+  color: "#ff9693"
+perl:
+  languageIds: [perl, perl6]
+  simpleIcons: perl
+  color: "#6d79b2"
+php:
+  languageIds: [php]
+  simpleIcons: php
+  color: "#777BB4"
+# plaintext:
+#   languageIds: [plaintext]
+#   simpleIcons: plaintext
+#   color: ""
+powershell:
+  languageIds: [powershell]
+  simpleIcons: powershell
+  color: "#5391FE"
+# jade:
+#   languageIds: [jade]
+#   simpleIcons: jade
+#   color: ""
+python:
+  languageIds: [python]
+  simpleIcons: python
+  color: "#3776AB"
+r:
+  languageIds: [r]
+  simpleIcons: r
+  color: "#276DC3"
+dotnet:
+  languageIds: [razor]
+  simpleIcons: dot-net
+  color: "#aa7bdf"
+ruby:
+  languageIds: [ruby]
+  simpleIcons: ruby
+  color: "#CC342D"
+rust:
+  languageIds: [rust]
+  simpleIcons: rust
+  color: "#FFFFFF"
+scss (syntax using curly brackets), sass (indented syntax):
+  languageIds: [scss]
+  simpleIcons: sass
+  color: "#CC6699"
+# shaderlab:
+#   languageIds: [shaderlab]
+#   simpleIcons: shaderlab
+#   color: ""
+shellscript:
+  languageIds: [shellscript]
+  simpleIcons: gnubash
+  color: "#4EAA25"
+sql:
+  languageIds: [sql]
+  simpleIcons: sqlite
+  color: "#003B57"
+swift:
+  languageIds: [swift]
+  simpleIcons: swift
+  color: "#FA7343"
+typescript:
+  languageIds: [typescript]
+  simpleIcons: typescript
+  color: "#007ACC"
+# vb:
+#   languageIds: [vb]
+#   simpleIcons: vb
+#   color: ""
+# xml:
+#   languageIds: [xml]
+#   simpleIcons: xml
+#   color: ""
+# yaml:
+#   languageIds: [yaml]
+#   simpleIcons: yaml
+#   color: ""
+code:
+  folderNames: [".vscode"]
+  simpleIcons: visualstudiocode
+  color: "#007ACC"
+github:
+  folderNames: [".github"]
+  simpleIcons: github
+  color: "#b4b3b3"

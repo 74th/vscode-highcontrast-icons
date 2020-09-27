@@ -50,6 +50,11 @@ async function main() {
         languageIds: {},
     } as FileIconSet;
 
+    let html = `<html><head><style "text/css">`;
+    html += `body { background-color: black; color: white; font-size: 13px;}`;
+    html += `img { height: 14px; }`
+    html += `</style></head><body><ul>`;
+
     const defs = yaml.parse((await fs.readFile("definition.yaml")).toString()) as { [index: string]: Definition }
 
     for (const name in defs) {
@@ -66,6 +71,8 @@ async function main() {
                 iconPath: `${name}.svg`,
             }
         }
+
+        html += `<li><img src="./${name}.svg" />  ${name}</li>`
 
         if (def.folderNames) {
             def.folderNames.forEach((id) => {
@@ -98,7 +105,10 @@ async function main() {
         }
     }
 
-    await fs.writeFile("fileicons/definitions.json", JSON.stringify(manifest))
+    html += `</ul></body></html>`;
+
+    await fs.writeFile("fileicons/definitions.json", JSON.stringify(manifest));
+    await fs.writeFile("fileicons/definitions.html", html);
 }
 
 const p = main();

@@ -28,7 +28,7 @@
     "yaml": "^1.10.0"
   },
   "scripts": {
-    "build": "npm ts-node build.ts"
+    "build": "ts-node build.ts"
   },
   "dependencies": {}
 }
