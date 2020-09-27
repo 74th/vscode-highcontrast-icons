@@ -1,0 +1,21 @@
+{
+    "name": "high-contrast-icon",
+    "displayName": "high-contrast-icon",
+    "description": "icons for high contrast themes",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "high contrast icons",
+                "uiTheme": "hc-black",
+                "path": "./themes/high contrast icons-color-theme.json"
+            }
+        ]
+    }
+}
