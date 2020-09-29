@@ -44,6 +44,8 @@ diff:
   color: "#FFFFFF"
 dockerfile:
   languageIds: [dockerfile]
+  fileNames:
+    - ".dockerignore"
   simpleIcons: docker
   color: "#2496ED"
 git:
@@ -51,6 +53,7 @@ git:
   simpleIcons: git
   fileNames:
     - ".gitignore"
+    - ".gitmodules"
   color: "#F05032"
 go:
   languageIds: [go]
@@ -68,10 +71,6 @@ html:
   languageIds: [html]
   simpleIcons: html5
   color: "#E34F26"
-# ini:
-#   languageIds: [ini]
-#   simpleIcons: ini
-#   color: ""
 java:
   languageIds: [java]
   simpleIcons: java
@@ -219,6 +218,8 @@ npm:
   fileNames:
     - package.json
     - package-lock.json
+    - pyproject.toml
+    - poetry.lock
   color: "#339933"
 yarn:
   simpleIcons: yarn
@@ -242,9 +243,11 @@ log:
   color: "#D0D0D0"
 setting:
   tablerIcons: settings
+  languageIds: [ini]
   fileExtensions:
     - envrc
     - plist
+    - .terraform-version
   color: "#FFFFFF"
 vim:
   simpleIcons: vim
@@ -257,3 +260,10 @@ rubygems:
   color: "#E9573F"
   fileExtensions:
     - gem
+terraform:
+  simpleIcons: terraform
+  color: "#623CE4"
+  languageIds:
+    - terraform
+  fileExtensions:
+    - tf
