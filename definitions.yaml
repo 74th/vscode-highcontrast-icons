@@ -181,7 +181,7 @@ typescript:
 #   color: ""
 kubernetes:
   folderNames:
-    - "kustomize.yaml"
+    - "kustomization.yaml"
   simpleIcons: "kubernetes"
   color: "#326CE5"
 yaml:
@@ -247,7 +247,9 @@ setting:
   fileExtensions:
     - envrc
     - plist
+  fileNames:
     - .terraform-version
+    - .env
   color: "#FFFFFF"
 vim:
   simpleIcons: vim
