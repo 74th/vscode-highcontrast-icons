@@ -216,10 +216,16 @@ svg:
 npm:
   tablerIcons: package
   fileNames:
+    # npm
     - package.json
     - package-lock.json
+    - yarn.lock
+    # Python
     - pyproject.toml
     - poetry.lock
+    # Go
+    - go.mod
+    - go.sum
   color: "#339933"
 yarn:
   simpleIcons: yarn
