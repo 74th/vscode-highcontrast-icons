@@ -120,8 +120,11 @@ php:
 #   simpleIcons: plaintext
 #   color: ""
 powershell:
-  languageIds: [powershell]
+  languageIds: [powershell, bat]
   simpleIcons: powershell
+  fileExtensions:
+    - ps
+    - bat
   color: "#5391FE"
 # jade:
 #   languageIds: [jade]
@@ -166,8 +169,8 @@ shellscript:
   color: "#4EAA25"
 sql:
   languageIds: [sql]
-  simpleIcons: sqlite
-  color: "#003B57"
+  tablerIcons: chart-donut
+  color: "#346f8b"
 swift:
   languageIds: [swift]
   simpleIcons: swift
