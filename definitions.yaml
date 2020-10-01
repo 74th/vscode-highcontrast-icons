@@ -51,10 +51,13 @@ dockerfile:
 git:
   languageIds: [git]
   simpleIcons: git
+  color: "#F05032"
+git-ignore:
+  simpleIcons: git
   fileNames:
     - ".gitignore"
     - ".gitmodules"
-  color: "#F05032"
+  color: "#858585"
 go:
   languageIds: [go]
   simpleIcons: go
@@ -159,7 +162,7 @@ scss:
 #   color: ""
 shellscript:
   languageIds: [shellscript]
-  simpleIcons: gnubash
+  tablerIcons: terminal-2
   color: "#4EAA25"
 sql:
   languageIds: [sql]
@@ -213,12 +216,12 @@ svg:
   fileExtensions:
     - svg
   color: "#FFB13B"
-npm:
+package:
   tablerIcons: package
   fileNames:
     # npm
     - package.json
-    - package-lock.json
+      package-lock.json
     - yarn.lock
     # Python
     - pyproject.toml
@@ -226,12 +229,11 @@ npm:
     # Go
     - go.mod
     - go.sum
+    # Ruby
+    - Gemfile
+  languageIds:
+    - gem
   color: "#339933"
-yarn:
-  simpleIcons: yarn
-  fileNames:
-    - yarn.lock
-  color: "#2C8EBB"
 compress:
   tablerIcons: box
   fileExtensions:
@@ -263,11 +265,6 @@ vim:
   fileExtensions:
     - vim
     - vimrc
-rubygems:
-  simpleIcons: rubygems
-  color: "#E9573F"
-  fileExtensions:
-    - gem
 terraform:
   simpleIcons: terraform
   color: "#623CE4"
@@ -275,3 +272,13 @@ terraform:
     - terraform
   fileExtensions:
     - tf
+vscode-settings:
+  simpleIcons: visualstudiocode
+  color: "#858585"
+  fileNames:
+    - .vscodeignore
+fixed-settings:
+  tablerIcons: file
+  color: "#858585"
+  fileNames:
+    - .editorconfig
