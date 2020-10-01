@@ -1,287 +1,319 @@
-markdown:
-  languageIds: [markdown]
-  tablerIcons: info-circle
-  color: "#FFFFFF"
-abap:
-  languageIds: [abap]
-  simpleIcons: sap
-  color: "#5ccaef"
-bat:
-  languageIds: [bat]
-  simpleIcons: windows
-  color: "#5ccaef"
-latex:
-  languageIds: [tex, lates, bibtex]
-  simpleIcons: latex
-  color: "#4ecece"
-clojure:
-  languageIds: [clojure]
-  simpleIcons: clojure
-  color: "#5881D8"
-coffeescript:
-  languageIds: [coffeescript]
-  simpleIcons: coffeescript
-  color: "#b3a19f"
-c:
-  languageIds: [c, "objective-c"]
-  simpleIcons: c
-  color: "#C5D0DD"
-cpp:
-  languageIds: [cpp, "objective-cpp"]
-  simpleIcons: cplusplus
-  color: "#0094FF"
-csharp:
-  languageIds: [csharp]
-  simpleIcons: csharp
-  color: "#239120"
-css:
-  languageIds: [css, xsl]
-  simpleIcons: css3
-  color: "#1572B6"
-diff:
-  languageIds: [diff, patch]
-  tablerIcons: file-diff
-  color: "#FFFFFF"
-dockerfile:
-  languageIds: [dockerfile]
-  fileNames:
-    - ".dockerignore"
-  simpleIcons: docker
-  color: "#2496ED"
-git:
-  languageIds: [git]
-  simpleIcons: git
-  color: "#F05032"
-git-ignore:
-  simpleIcons: git
-  fileNames:
-    - ".gitignore"
-    - ".gitmodules"
-  color: "#858585"
-go:
-  languageIds: [go]
-  simpleIcons: go
-  color: "#00ADD8"
-groovy:
-  languageIds: [groovy]
-  simpleIcons: groovy
-  color: "#4298B8"
-# handlebars:
-#   languageIds: [handlebars]
-#   simpleIcons: handlebars
-#   color: ""
-html:
-  languageIds: [html]
-  simpleIcons: html5
-  color: "#E34F26"
-java:
-  languageIds: [java]
-  simpleIcons: java
-  color: "#34a7ca"
-javascript:
-  languageIds: [javascript]
-  simpleIcons: javascript
-  color: "#F7DF1E"
-javascriptreact:
-  languageIds: [javascriptreact, typescriptreact]
-  simpleIcons: react
-  color: "#61DAFB"
-webpack:
-  fileNames:
-    - webpack.config.js
-  simpleIcons: webpack
-  color: "#8DD6F9"
-json:
-  languageIds: [json, jsonc]
-  tablerIcons: braces
-  color: "#FFFFFF"
-# less:
-#   languageIds: [less]
-#   simpleIcons: less
-#   color: ""
-lua:
-  languageIds: [lua]
-  simpleIcons: lua
-  color: "#aeaff4"
-makefile:
-  languageIds: [makefile]
-  simpleIcons: gnu
-  color: "#ff9693"
-perl:
-  languageIds: [perl, perl6]
-  simpleIcons: perl
-  color: "#6d79b2"
-php:
-  languageIds: [php]
-  simpleIcons: php
-  color: "#777BB4"
-# plaintext:
-#   languageIds: [plaintext]
-#   simpleIcons: plaintext
-#   color: ""
-powershell:
-  languageIds: [powershell, bat]
-  simpleIcons: powershell
-  fileExtensions:
-    - ps
-    - bat
-  color: "#5391FE"
-# jade:
-#   languageIds: [jade]
-#   simpleIcons: jade
-#   color: ""
-python:
-  languageIds: [python]
-  simpleIcons: python
-  color: "#98d800"
-jupyter:
-  fileExtensions:
-    - ipynb
-  simpleIcons: jupyter
-  color: "#F37626"
-r:
-  languageIds: [r]
-  simpleIcons: r
-  color: "#276DC3"
-dotnet:
-  languageIds: [razor, fsharp]
-  simpleIcons: dot-net
-  color: "#aa7bdf"
-ruby:
-  languageIds: [ruby]
-  simpleIcons: ruby
-  color: "#CC342D"
-rust:
-  languageIds: [rust]
-  simpleIcons: rust
-  color: "#FFFFFF"
-scss:
-  languageIds: [scss]
-  simpleIcons: sass
-  color: "#CC6699"
-# shaderlab:
-#   languageIds: [shaderlab]
-#   simpleIcons: shaderlab
-#   color: ""
-shellscript:
-  languageIds: [shellscript]
-  tablerIcons: terminal-2
-  color: "#4EAA25"
-sql:
-  languageIds: [sql]
-  tablerIcons: chart-donut
-  color: "#346f8b"
-swift:
-  languageIds: [swift]
-  simpleIcons: swift
-  color: "#FA7343"
-typescript:
-  languageIds: [typescript]
-  fileNames:
-    - "tsconfig.json"
-  simpleIcons: typescript
-  color: "#007ACC"
-# vb:
-#   languageIds: [vb]
-#   simpleIcons: vb
-#   color: ""
-kubernetes:
-  folderNames:
-    - "kustomization.yaml"
-  simpleIcons: "kubernetes"
-  color: "#326CE5"
-yaml:
-  languageIds: [yaml]
-  tablerIcons: braces
-  color: "#FFFFFF"
-file:
-  file: true
-  tablerIcons: file
-  color: "#FFFFFF"
-license:
-  tablerIcons: license
-  fileNames:
-    - License
-    - LICENSE
-  color: "#FFFFFF"
-image:
-  tablerIcons: photo
-  fileExtensions:
-    - png
-    - svg
-    - jpeg
-    - jpg
-    - gif
-    - bmp
-  color: "#FFFFFF"
-svg:
-  simpleIcons: svg
-  fileExtensions:
-    - svg
-  color: "#FFB13B"
-package:
-  tablerIcons: package
-  fileNames:
-    # npm
-    - package.json
-      package-lock.json
-    - yarn.lock
-    # Python
-    - pyproject.toml
-    - poetry.lock
-    # Go
-    - go.mod
-    - go.sum
-    # Ruby
-    - Gemfile
-  languageIds:
-    - gem
-  color: "#339933"
-compress:
-  tablerIcons: box
-  fileExtensions:
-    - tar
-    - zip
-    - gz
-    - lzh
-    - gzip
-    - tgz
-  color: "#D0D0D0"
-log:
-  tablerIcons: file-text
-  fileExtensions:
-    - log
-  color: "#D0D0D0"
-setting:
-  tablerIcons: settings
-  languageIds: [ini]
-  fileExtensions:
-    - envrc
-    - plist
-  fileNames:
-    - .terraform-version
-    - .env
-  color: "#FFFFFF"
-vim:
-  simpleIcons: vim
-  color: "#019733"
-  fileExtensions:
-    - vim
-    - vimrc
-terraform:
-  simpleIcons: terraform
-  color: "#623CE4"
-  languageIds:
-    - terraform
-  fileExtensions:
-    - tf
-vscode-settings:
-  simpleIcons: visualstudiocode
-  color: "#858585"
-  fileNames:
-    - .vscodeignore
-fixed-settings:
-  tablerIcons: file
-  color: "#858585"
-  fileNames:
-    - .editorconfig
+languages:
+  abap:
+    languageIds: [abap]
+    simpleIcons: sap
+    color: "#5ccaef"
+  latex:
+    languageIds: [tex, lates, bibtex]
+    simpleIcons: latex
+    color: "#4ecece"
+  clojure:
+    languageIds: [clojure]
+    simpleIcons: clojure
+    color: "#5881D8"
+  coffeescript:
+    languageIds: [coffeescript]
+    simpleIcons: coffeescript
+    color: "#b3a19f"
+  c:
+    languageIds: [c, "objective-c"]
+    simpleIcons: c
+    color: "#C5D0DD"
+  cpp:
+    languageIds: [cpp, "objective-cpp"]
+    simpleIcons: cplusplus
+    color: "#0094FF"
+  csharp:
+    languageIds: [csharp]
+    simpleIcons: csharp
+    color: "#239120"
+  css:
+    languageIds: [css, xsl]
+    simpleIcons: css3
+    color: "#1572B6"
+  dockerfile:
+    languageIds: [dockerfile]
+    fileNames:
+      - ".dockerignore"
+    simpleIcons: docker
+    color: "#2496ED"
+  git:
+    languageIds: [git]
+    simpleIcons: git
+    color: "#F05032"
+  go:
+    languageIds: [go]
+    simpleIcons: go
+    color: "#00ADD8"
+  groovy:
+    languageIds: [groovy]
+    simpleIcons: groovy
+    color: "#4298B8"
+  # handlebars:
+  #   languageIds: [handlebars]
+  #   simpleIcons: handlebars
+  #   color: ""
+  html:
+    languageIds: [html]
+    simpleIcons: html5
+    color: "#E34F26"
+  java:
+    languageIds: [java]
+    simpleIcons: java
+    color: "#34a7ca"
+  javascript:
+    languageIds: [javascript]
+    simpleIcons: javascript
+    color: "#F7DF1E"
+  javascriptreact:
+    languageIds: [javascriptreact, typescriptreact]
+    simpleIcons: react
+    color: "#61DAFB"
+  webpack:
+    fileNames:
+      - webpack.config.js
+    simpleIcons: webpack
+    color: "#8DD6F9"
+  # less:
+  #   languageIds: [less]
+  #   simpleIcons: less
+  #   color: ""
+  lua:
+    languageIds: [lua]
+    simpleIcons: lua
+    color: "#aeaff4"
+  perl:
+    languageIds: [perl, perl6]
+    simpleIcons: perl
+    color: "#6d79b2"
+  php:
+    languageIds: [php]
+    simpleIcons: php
+    color: "#777BB4"
+  # plaintext:
+  #   languageIds: [plaintext]
+  #   simpleIcons: plaintext
+  #   color: ""
+  # jade:
+  #   languageIds: [jade]
+  #   simpleIcons: jade
+  #   color: ""
+  python:
+    languageIds: [python]
+    simpleIcons: python
+    color: "#98d800"
+  jupyter:
+    fileExtensions:
+      - ipynb
+    simpleIcons: jupyter
+    color: "#F37626"
+  r:
+    languageIds: [r]
+    simpleIcons: r
+    color: "#276DC3"
+  dotnet:
+    languageIds: [razor, fsharp]
+    simpleIcons: dot-net
+    color: "#aa7bdf"
+  ruby:
+    languageIds: [ruby]
+    simpleIcons: ruby
+    color: "#CC342D"
+  rust:
+    languageIds: [rust]
+    simpleIcons: rust
+    color: "#FFFFFF"
+  scss:
+    languageIds: [scss]
+    simpleIcons: sass
+    color: "#CC6699"
+  # shaderlab:
+  #   languageIds: [shaderlab]
+  #   simpleIcons: shaderlab
+  #   color: ""
+  swift:
+    languageIds: [swift]
+    simpleIcons: swift
+    color: "#FA7343"
+  typescript:
+    languageIds: [typescript]
+    fileNames:
+      - "tsconfig.json"
+    simpleIcons: typescript
+    color: "#007ACC"
+  # vb:
+  #   languageIds: [vb]
+  #   simpleIcons: vb
+  #   color: ""
+  kubernetes:
+    folderNames:
+      - "kustomization.yaml"
+    simpleIcons: "kubernetes"
+    color: "#326CE5"
+  vim:
+    simpleIcons: vim
+    color: "#019733"
+    fileExtensions:
+      - vim
+      - vimrc
+  terraform:
+    simpleIcons: terraform
+    color: "#623CE4"
+    languageIds:
+      - terraform
+    fileExtensions:
+      - tf
+packages:
+  package:
+    tablerIcons: package
+    fileNames:
+      # npm
+      - package.json
+      - yarn.lock
+      # Python
+      - pyproject.toml
+      - poetry.lock
+      # Go
+      - go.mod
+      - go.sum
+      # Ruby
+      - Gemfile
+    languageIds:
+      - gem
+    color: "#339933"
+  package-lockfile:
+    tablerIcons: package
+    fileNames:
+      # npm
+      - package-lock.json
+      - yarn.lock
+      # Python
+      - poetry.lock
+      # Go
+      - go.sum
+    color: "#006500"
+images:
+  image:
+    tablerIcons: photo
+    fileExtensions:
+      - png
+      - svg
+      - jpeg
+      - jpg
+      - gif
+      - bmp
+    color: "#e7dc60"
+  svg:
+    simpleIcons: svg
+    fileExtensions:
+      - svg
+    color: "#e7dc60"
+data:
+  json:
+    languageIds: [json, jsonc]
+    tablerIcons: braces
+    color: "#FFFFFF"
+  yaml:
+    languageIds: [yaml]
+    tablerIcons: braces
+    color: "#FFFFFF"
+  xml:
+    languageIds: [xml]
+    tablerIcons: braces
+    color: "#FFFFFF"
+  csv:
+    languageIds: [csv, tsv]
+    tablerIcons: lisr
+    color: "#FFFFFF"
+scripts:
+  shellscript:
+    languageIds: [shellscript]
+    tablerIcons: terminal-2
+    color: "#5391FE"
+  bat:
+    languageIds: [bat]
+    tablerIcons: terminal-2
+    color: "#5391FE"
+  powershell:
+    languageIds: [powershell, bat]
+    simpleIcons: powershell
+    fileExtensions:
+      - ps
+      - bat
+    color: "#5391FE"
+builders:
+  makefile:
+    languageIds: [makefile]
+    tablerIcons: tools
+    color: "#ff9693"
+generals:
+  markdown:
+    languageIds: [markdown]
+    tablerIcons: info-circle
+    color: "#FFFFFF"
+  diff:
+    languageIds: [diff, patch]
+    tablerIcons: file-diff
+    color: "#FFFFFF"
+  log:
+    tablerIcons: file-text
+    fileExtensions:
+      - log
+    color: "#D0D0D0"
+  setting:
+    tablerIcons: settings
+    languageIds: [ini]
+    fileExtensions:
+      - envrc
+      - plist
+    fileNames:
+      - .terraform-version
+      - .env
+    color: "#FFFFFF"
+  compress:
+    tablerIcons: box
+    fileExtensions:
+      - tar
+      - zip
+      - gz
+      - lzh
+      - gzip
+      - tgz
+    color: "#D0D0D0"
+  file:
+    file: true
+    tablerIcons: file
+    color: "#FFFFFF"
+  license:
+    tablerIcons: license
+    fileNames:
+      - License
+      - LICENSE
+    color: "#FFFFFF"
+repository-settings:
+  vscode-settings:
+    simpleIcons: visualstudiocode
+    color: "#858585"
+    fileNames:
+      - .vscodeignore
+  fixed-settings:
+    tablerIcons: file
+    color: "#858585"
+    fileNames:
+      - .editorconfig
+  git-ignore:
+    simpleIcons: git
+    fileNames:
+      - ".gitignore"
+      - ".gitmodules"
+    color: "#858585"
+  docker-ignore:
+    fileNames:
+      - ".dockerignore"
+    simpleIcons: docker
+    color: "#858585"
+others:
+  sql:
+    languageIds: [sql]
+    tablerIcons: chart-donut
+    color: "#68a3bf"

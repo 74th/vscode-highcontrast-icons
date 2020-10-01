@@ -6,48 +6,53 @@
   "patternProperties": {
     ".*": {
       "type": "object",
-      "properties": {
-        "simpleIcons": {
-          "type": "string"
-        },
-        "tablerIcons": {
-          "type": "string"
-        },
-        "color": {
-          "type": "string"
-        },
-        "folderNames": {
-          "type": "array",
-          "items": {
-            "type": "string"
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "properties": {
+            "simpleIcons": {
+              "type": "string"
+            },
+            "tablerIcons": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            },
+            "folderNames": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "fileExtensions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "fileNames": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "languageIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "file": {
+              "type": "string"
+            },
+            "folder": {
+              "type": "string"
+            },
+            "folderExpanded": {
+              "type": "string"
+            }
           }
-        },
-        "fileExtensions": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "fileNames": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "languageIds": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "file": {
-          "type": "string"
-        },
-        "folder": {
-          "type": "string"
-        },
-        "folderExpanded": {
-          "type": "string"
         }
       }
     }

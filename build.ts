@@ -90,67 +90,88 @@ async function main() {
     html += `</head><body><ul>`;
 
 
-    const defs = yaml.parse((await fs.readFile("definitions.yaml")).toString()) as { [index: string]: Definition }
+    const defGroupss = yaml.parse((await fs.readFile("definitions.yaml")).toString()) as { [index: string]: Definition }
 
-    for (const name in defs) {
+    for (const groupName in defGroupss) {
+        const defs = defGroupss[groupName];
 
-        console.log(name);
+        html += `<h2>${groupName}</h2>`
 
-        const def = defs[name];
+        for (const name in defs) {
 
-        const iconName = `_${name}`;
+            console.log(name);
 
-        if (def.simpleIcons) {
-            await copySimpleIcon(name, def.simpleIcons, def.color);
-            manifest.iconDefinitions[iconName] = {
-                iconPath: `${name}.svg`,
+            const def = defs[name];
+
+            const iconName = `_${name}`;
+
+            const assigned: string[] = [];
+
+            if (def.languageIds) {
+                def.languageIds.forEach((id) => {
+                    manifest.languageIds[id] = iconName;
+                    assigned.push(`[${id}]`);
+                });
             }
-            html += `<li><img src="./fileicons/${name}.svg" />  ${name}</li>`
-        }
-        // if (def.materialIcons) {
-        //     manifest.iconDefinitions[iconName] = {
-        //         fontId: "material-icons",
-        //         fontCharacter: def.materialIcons,
-        //         fontColor: def.color,
-        //     }
-        //     html += `<li><span class="material-icons">${def.materialIcons}</span>  ${name}</li>`
-        // }
-        if (def.tablerIcons) {
-            await copyTablerIcon(name, def.tablerIcons, def.color);
-            manifest.iconDefinitions[iconName] = {
-                iconPath: `${name}.svg`,
+            if (def.folderNames) {
+                def.folderNames.forEach((id) => {
+                    manifest.folderNames[id] = iconName;
+                    assigned.push(id);
+                });
             }
-            html += `<li><img src="./fileicons/${name}.svg" />  ${name}</li>`
-        }
+            if (def.fileExtensions) {
+                def.fileExtensions.forEach((id) => {
+                    manifest.fileExtensions[id] = iconName;
+                    assigned.push(`.${id}`);
+                });
+            }
+            if (def.fileNames) {
+                def.fileNames.forEach((id) => {
+                    manifest.fileNames[id] = iconName;
+                    assigned.push(id);
+                });
+            }
+            if (def.file) {
+                manifest.file = iconName;
+                assigned.push("file");
+            }
+            if (def.folder) {
+                manifest.folder = iconName;
+                assigned.push("folder");
+            }
+            if (def.folderExpanded) {
+                manifest.folderExpanded = iconName;
+                assigned.push("folderExpanded");
+            }
 
-        if (def.folderNames) {
-            def.folderNames.forEach((id) => {
-                manifest.folderNames[id] = iconName;
-            });
-        }
-        if (def.fileExtensions) {
-            def.fileExtensions.forEach((id) => {
-                manifest.fileExtensions[id] = iconName;
-            });
-        }
-        if (def.fileNames) {
-            def.fileNames.forEach((id) => {
-                manifest.fileNames[id] = iconName;
-            });
-        }
-        if (def.languageIds) {
-            def.languageIds.forEach((id) => {
-                manifest.languageIds[id] = iconName;
-            });
-        }
-        if (def.file) {
-            manifest.file = iconName;
-        }
-        if (def.folder) {
-            manifest.folder = iconName;
-        }
-        if (def.folderExpanded) {
-            manifest.folderExpanded = iconName;
+            html += `<li>`
+
+            if (def.simpleIcons) {
+                await copySimpleIcon(name, def.simpleIcons, def.color);
+                manifest.iconDefinitions[iconName] = {
+                    iconPath: `${name}.svg`,
+                }
+                html += `<img src="./fileicons/${name}.svg" />`
+            }
+
+            // if (def.materialIcons) {
+            //     manifest.iconDefinitions[iconName] = {
+            //         fontId: "material-icons",
+            //         fontCharacter: def.materialIcons,
+            //         fontColor: def.color,
+            //     }
+            //     html += `<li><span class="material-icons">${def.materialIcons}</span>  ${name}</li>`
+            // }
+            if (def.tablerIcons) {
+                await copyTablerIcon(name, def.tablerIcons, def.color);
+                manifest.iconDefinitions[iconName] = {
+                    iconPath: `${name}.svg`,
+                }
+                html += `<img src="./fileicons/${name}.svg" />`
+            }
+            html += ` ${name} ... `
+            html += assigned.join(" ")
+            html += `</li>`
         }
     }
 
