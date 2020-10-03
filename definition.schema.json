@@ -19,6 +19,9 @@
             "color": {
               "type": "string"
             },
+            "lightColor": {
+              "type": "string"
+            },
             "folderNames": {
               "type": "array",
               "items": {

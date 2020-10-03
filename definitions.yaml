@@ -56,6 +56,7 @@
     fileExtensions: [go]
     simpleIcons: go
     color: "#00ADD8"
+    lightColor: "#00ADD8"
   groovy:
     languageIds: [groovy]
     fileExtensions: [groovy]
@@ -75,6 +76,7 @@
     fileExtensions: [class, jar]
     simpleIcons: java
     color: "#00597c"
+    lightColor: "#00597c"
   javascript:
     languageIds: [javascript]
     fileExtensions: [js, jsm]
@@ -105,6 +107,7 @@
     fileExtensions: [py, py3, cython]
     simpleIcons: python
     color: "#98d800"
+    lightColor: "#98d800"
   jupyter:
     simpleIcons: jupyter
     fileExtensions: [ipynb]
@@ -156,6 +159,7 @@
       - gvimrc
     simpleIcons: vim
     color: "#019733"
+    lightColor: "#019733"
   emacs:
     fileExtensions: [el, elc]
     simpleIcons: gnuemacs
@@ -565,11 +569,13 @@
   vscode-settings:
     simpleIcons: visualstudiocode
     color: "#858585"
+    lightColor: "#b9b9b9"
     fileNames:
       - .vscodeignore
   nodejs-settings:
     simpleIcons: node-dot-js
     color: "#858585"
+    lightColor: "#b9b9b9"
     fileNames:
       - .node-version
       - .nvmrc
@@ -578,9 +584,12 @@
     fileNames:
       - .env
     color: "#858585"
+    lightColor: "#b9b9b9"
   fixed-settings:
     tablerIcons: settings
     color: "#858585"
+    lightColor: "#b9b9b9"
+    languageIds: ["editorconfig"]
     fileNames:
       - .editorconfig
   git-ignore:
@@ -589,24 +598,29 @@
       - ".gitignore"
       - ".gitmodules"
     color: "#858585"
+    lightColor: "#b9b9b9"
   docker-ignore:
     fileNames:
       - ".dockerignore"
     simpleIcons: docker
     color: "#858585"
+    lightColor: "#b9b9b9"
   babel-ignore:
     fileNames: [.babelignore]
     simpleIcons: babel
     color: "#858585"
+    lightColor: "#b9b9b9"
   git-repository-settings:
     fileNames: [.gitkeep, .gitmodules, .gitattribute]
     simpleIcons: git
     color: "#858585"
+    lightColor: "#b9b9b9"
   terraform-setting:
     fileNames:
       - .terraform-version
     simpleIcons: terraform
     color: "#858585"
+    lightColor: "#b9b9b9"
   prettier:
     fileNames:
       - .prettierrc
@@ -617,19 +631,23 @@
       - .prettierignore
     simpleIcons: prettier
     color: "#858585"
+    lightColor: "#b9b9b9"
   typescript-config:
     fileNames: [tsconfig.json]
     simpleIcons: typescript
     color: "#858585"
+    lightColor: "#b9b9b9"
   babel:
     fileExtensions: [babelrc, babelrc.js, babelrc.json]
     fileNames: [babelrc.config.json]
     simpleIcons: babel
     color: "#858585"
+    lightColor: "#b9b9b9"
   git-config:
     fileNames: [.gitconfig]
     simpleIcons: git
     color: "#858585"
+    lightColor: "#b9b9b9"
   webpack:
     fileNames:
       - webpack.config.js
@@ -670,3 +688,4 @@
       - webpack.config.staging.babel.ts
     simpleIcons: webpack
     color: "#858585"
+    lightColor: "#b9b9b9"

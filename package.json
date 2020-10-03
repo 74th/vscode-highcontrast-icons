@@ -13,14 +13,21 @@
   "contributes": {
     "iconThemes": [
       {
-        "id": "high-contrast-icons",
-        "label": "High Contrast Icons",
-        "path": "./fileicons/definitions.json"
+        "id": "high-contrast-icons-dark",
+        "label": "High Contrast Icons (Dark)",
+        "path": "./dark/manifest.json"
+      },
+      {
+        "id": "high-contrast-icons-light",
+        "label": "High Contrast Icons (Light)",
+        "path": "./light/manifest.json"
       }
     ]
   },
   "devDependencies": {
+    "@types/color-convert": "^1.9.0",
     "@types/xml": "^1.0.5",
+    "color-convert": "^2.0.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
     "simple-icons": "^3.9.0",
