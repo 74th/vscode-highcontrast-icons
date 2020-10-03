@@ -1,38 +1,47 @@
 languages:
   abap:
     languageIds: [abap]
+    fileExtensions: [abap]
     simpleIcons: sap
     color: "#5ccaef"
   latex:
     languageIds: [tex, lates, bibtex]
+    fileExtensions: [tex]
     simpleIcons: latex
     color: "#4ecece"
   clojure:
     languageIds: [clojure]
+    fileExtensions: [clj]
     simpleIcons: clojure
     color: "#5881D8"
   coffeescript:
     languageIds: [coffeescript]
+    fileExtensions: [coffee]
     simpleIcons: coffeescript
     color: "#b3a19f"
   c:
     languageIds: [c, "objective-c"]
+    fileExtensions: [c]
     simpleIcons: c
     color: "#C5D0DD"
   cpp:
     languageIds: [cpp, "objective-cpp"]
+    fileExtensions: [cpp]
     simpleIcons: cplusplus
     color: "#0094FF"
   csharp:
     languageIds: [csharp]
+    fileExtensions: [cs]
     simpleIcons: csharp
     color: "#239120"
   css:
     languageIds: [css, xsl]
+    fileExtensions: [css, xsl]
     simpleIcons: css3
     color: "#1572B6"
   dockerfile:
     languageIds: [dockerfile]
+    fileExtensions: [dockerfile, Dockerfile]
     fileNames:
       - ".dockerignore"
     simpleIcons: docker
@@ -43,10 +52,12 @@ languages:
     color: "#F05032"
   go:
     languageIds: [go]
+    fileExtensions: [go]
     simpleIcons: go
     color: "#00ADD8"
   groovy:
     languageIds: [groovy]
+    fileExtensions: [groovy]
     simpleIcons: groovy
     color: "#4298B8"
   # handlebars:
@@ -55,18 +66,22 @@ languages:
   #   color: ""
   html:
     languageIds: [html]
+    fileExtensions: [html, xhtml]
     simpleIcons: html5
     color: "#E34F26"
   java:
     languageIds: [java]
+    fileExtensions: [java]
     simpleIcons: java
     color: "#34a7ca"
   javascript:
     languageIds: [javascript]
+    fileExtensions: [js, jsm]
     simpleIcons: javascript
     color: "#F7DF1E"
   javascriptreact:
     languageIds: [javascriptreact, typescriptreact]
+    fileExtensions: [jsx]
     simpleIcons: react
     color: "#61DAFB"
   webpack:
@@ -80,14 +95,17 @@ languages:
   #   color: ""
   lua:
     languageIds: [lua]
+    fileExtensions: [lua]
     simpleIcons: lua
     color: "#aeaff4"
   perl:
     languageIds: [perl, perl6]
+    fileExtensions: [pl]
     simpleIcons: perl
     color: "#6d79b2"
   php:
     languageIds: [php]
+    fileExtensions: [php]
     simpleIcons: php
     color: "#777BB4"
   # plaintext:
@@ -100,31 +118,36 @@ languages:
   #   color: ""
   python:
     languageIds: [python]
+    fileExtensions: [py, py3, cython]
     simpleIcons: python
     color: "#98d800"
   jupyter:
-    fileExtensions:
-      - ipynb
     simpleIcons: jupyter
+    fileExtensions: [ipynb]
     color: "#F37626"
   r:
     languageIds: [r]
+    fileExtensions: [r]
     simpleIcons: r
     color: "#276DC3"
   dotnet:
     languageIds: [razor, fsharp]
+    fileExtensions: [cshtml, vbhtml]
     simpleIcons: dot-net
     color: "#aa7bdf"
   ruby:
     languageIds: [ruby]
+    fileExtensions: [rb]
     simpleIcons: ruby
     color: "#CC342D"
   rust:
     languageIds: [rust]
+    fileExtensions: [rs, rslib]
     simpleIcons: rust
     color: "#FFFFFF"
   scss:
     languageIds: [scss]
+    fileExtensions: [scss]
     simpleIcons: sass
     color: "#CC6699"
   # shaderlab:
@@ -133,10 +156,12 @@ languages:
   #   color: ""
   swift:
     languageIds: [swift]
+    fileExtensions: [swift]
     simpleIcons: swift
     color: "#FA7343"
   typescript:
     languageIds: [typescript]
+    fileExtensions: [ts]
     fileNames:
       - "tsconfig.json"
     simpleIcons: typescript
@@ -151,11 +176,11 @@ languages:
     simpleIcons: "kubernetes"
     color: "#326CE5"
   vim:
-    simpleIcons: vim
-    color: "#019733"
     fileExtensions:
       - vim
       - vimrc
+    simpleIcons: vim
+    color: "#019733"
   terraform:
     simpleIcons: terraform
     color: "#623CE4"
@@ -211,48 +236,56 @@ images:
 data:
   json:
     languageIds: [json, jsonc]
+    fileExtensions: [json, jsonc]
     tablerIcons: braces
     color: "#FFFFFF"
   yaml:
     languageIds: [yaml]
+    fileExtensions: [yaml, yml]
     tablerIcons: braces
     color: "#FFFFFF"
   xml:
     languageIds: [xml]
+    fileExtensions: [xml]
     tablerIcons: braces
     color: "#FFFFFF"
   csv:
     languageIds: [csv, tsv]
-    tablerIcons: lisr
+    fileExtensions: [csv, tsv]
+    tablerIcons: list
     color: "#FFFFFF"
 scripts:
   shellscript:
     languageIds: [shellscript]
+    fileExtensions: [sh, bash]
+    fileNames: [.bashrc]
     tablerIcons: terminal-2
     color: "#5391FE"
   bat:
     languageIds: [bat]
+    fileExtensions: [bat]
     tablerIcons: terminal-2
     color: "#5391FE"
   powershell:
-    languageIds: [powershell, bat]
+    languageIds: [powershell]
     simpleIcons: powershell
-    fileExtensions:
-      - ps
-      - bat
+    fileExtensions: [ps]
     color: "#5391FE"
 builders:
   makefile:
     languageIds: [makefile]
+    fileNames: [Makefile]
     tablerIcons: tools
     color: "#ff9693"
 generals:
   markdown:
     languageIds: [markdown]
+    fileExtensions: [md, markdown]
     tablerIcons: info-circle
     color: "#FFFFFF"
   diff:
     languageIds: [diff, patch]
+    fileExtensions: [diff, patch]
     tablerIcons: file-diff
     color: "#FFFFFF"
   log:
@@ -274,11 +307,18 @@ generals:
     tablerIcons: box
     fileExtensions:
       - tar
-      - zip
       - gz
+      - tgz
+      - bz
+      - tbz
+      - Z
+      - zip
       - lzh
       - gzip
-      - tgz
+      - cab
+      - afz
+      - rar
+      - 7z
     color: "#D0D0D0"
   file:
     file: true
@@ -315,5 +355,6 @@ repository-settings:
 others:
   sql:
     languageIds: [sql]
+    fileExtensions: [sql]
     tablerIcons: chart-donut
     color: "#68a3bf"

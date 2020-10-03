@@ -1,4 +1,5 @@
 import * as xml from "xml-js";
+import * as path from "path";
 import * as yaml from "yaml";
 import { promises as fs } from "fs";
 import * as child_process from "child_process";
@@ -166,12 +167,22 @@ async function main() {
                 await copyTablerIcon(name, def.tablerIcons, def.color);
                 manifest.iconDefinitions[iconName] = {
                     iconPath: `${name}.svg`,
-                }
-                html += `<img src="./fileicons/${name}.svg" />`
+                };
+                html += `<img src="./fileicons/${name}.svg" />`;
             }
-            html += ` ${name} ... `
-            html += assigned.join(" ")
-            html += `</li>`
+            html += ` ${name} ... `;
+            html += assigned.join(" ");
+            html += `</li>`;
+
+            let sampleFileName = "";
+            if (def.fileExtensions) {
+                sampleFileName = `${name}.${def.fileExtensions[0]}`;
+            } else if (def.fileNames) {
+                sampleFileName = def.fileNames[0];
+            }
+            if (sampleFileName.length) {
+                await fs.writeFile(path.join("samples", sampleFileName), name);
+            }
         }
     }
 
