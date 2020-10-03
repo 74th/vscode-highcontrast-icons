@@ -3,4 +3,6 @@
 .gitignore
 vsc-extension-quickstart.md
 node_modules/
-material-design-icons
+tabler-icons
+simple-icons
+samples

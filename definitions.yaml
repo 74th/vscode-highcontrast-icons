@@ -11,7 +11,7 @@ languages:
     color: "#4ecece"
   clojure:
     languageIds: [clojure]
-    fileExtensions: [clj]
+    fileExtensions: [clj, cjm, cljc]
     simpleIcons: clojure
     color: "#5881D8"
   coffeescript:
@@ -74,6 +74,10 @@ languages:
     fileExtensions: [java]
     simpleIcons: java
     color: "#34a7ca"
+  java-package:
+    fileExtensions: [class, jar]
+    simpleIcons: java
+    color: "#00597c"
   javascript:
     languageIds: [javascript]
     fileExtensions: [js, jsm]
@@ -172,7 +176,7 @@ languages:
   #   color: ""
   kubernetes:
     folderNames:
-      - "kustomization.yaml"
+      - kustomization.yaml
     simpleIcons: "kubernetes"
     color: "#326CE5"
   vim:
@@ -188,6 +192,28 @@ languages:
       - terraform
     fileExtensions:
       - tf
+  applescript:
+    languageIds: [applescript]
+    fileExtensions: [applescript]
+    simpleIcons: apple
+    color: "#999999"
+services:
+  circleci:
+    fileNames:
+      - circle.yml
+    simpleIcons: circleci
+    color: "#b6b6b6"
+  firebase:
+    fileNames:
+      - ".firebaserc"
+      - "firebase.json"
+    simpleIcons: firebase
+    color: "#FFCA28"
+  appveyor:
+    fileNames: [appveyor.yml]
+    fileExtensions: [appveyor.yml]
+    simpleIcons: appveyor
+    color: "#00B3E0"
 packages:
   package:
     tablerIcons: package
@@ -277,6 +303,10 @@ builders:
     fileNames: [Makefile]
     tablerIcons: tools
     color: "#ff9693"
+  ansible:
+    languageIds: [ansible]
+    simpleIcons: ansible
+    color: "#EE0000"
 generals:
   markdown:
     languageIds: [markdown]
@@ -299,6 +329,7 @@ generals:
     fileExtensions:
       - envrc
       - plist
+      - conf
     fileNames:
       - .terraform-version
       - .env
@@ -322,7 +353,11 @@ generals:
     color: "#D0D0D0"
   file:
     file: true
-    tablerIcons: file
+    tablerIcons: square
+    color: "#FFFFFF"
+  exe:
+    fileExtensions: [exe]
+    tablerIcons: square-dot
     color: "#FFFFFF"
   license:
     tablerIcons: license
@@ -337,7 +372,7 @@ repository-settings:
     fileNames:
       - .vscodeignore
   fixed-settings:
-    tablerIcons: file
+    tablerIcons: settings
     color: "#858585"
     fileNames:
       - .editorconfig
