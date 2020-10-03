@@ -96,6 +96,12 @@ async function main() {
     for (const groupName in defGroupss) {
         const defs = defGroupss[groupName];
 
+        try {
+            await fs.stat(path.join("samples", groupName));
+        } catch (e) {
+            fs.mkdir(path.join("samples", groupName));
+        }
+
         html += `<h2>${groupName}</h2>`
 
         for (const name in defs) {
@@ -181,7 +187,7 @@ async function main() {
                 sampleFileName = def.fileNames[0];
             }
             if (sampleFileName.length) {
-                await fs.writeFile(path.join("samples", sampleFileName), name);
+                await fs.writeFile(path.join("samples", groupName, sampleFileName), name);
             }
         }
     }
