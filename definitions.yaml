@@ -264,40 +264,64 @@ services:
     simpleIcons: travisci
     color: "#3EAAAF"
 packages:
-  package:
-    tablerIcons: package
+  package-npm:
     fileNames:
-      # npm
       - package.json
       - yarn.lock
-      # Python
+    tablerIcons: package
+    color: "#339933"
+  package-python:
+    fileNames:
       - pyproject.toml
       - poetry.lock
+    tablerIcons: package
+    color: "#339933"
+  package-go:
+    fileNames:
       # Go
       - go.mod
       - go.sum
-      # Ruby
+    tablerIcons: package
+    color: "#339933"
+  package-ruby:
+    fileNames:
+      - gemfile
       - Gemfile
-      # Visual Studio
+    languageIds:
+      - gem
+    tablerIcons: package
+    color: "#339933"
+  visualstudio-project-settings:
+    fileExtensions:
       - csproj
       - vbproj
       - fsproj
       - vcxproj
       - njsproj
       - sln
-    languageIds:
-      - gem
-    color: "#339933"
-  package-lockfile:
     tablerIcons: package
+    color: "#339933"
+  package-lockfile-npm:
     fileNames:
-      # npm
       - package-lock.json
       - yarn.lock
-      # Python
+    tablerIcons: package
+    color: "#006500"
+  package-lockfile-python:
+    fileNames:
       - poetry.lock
-      # Go
+    tablerIcons: package
+    color: "#006500"
+  package-lockfile-go:
+    fileNames:
       - go.sum
+    tablerIcons: package
+    color: "#006500"
+  package-lock-ruby:
+    fileNames:
+      - gemfile.lock
+      - Gemfile.lock
+    tablerIcons: package
     color: "#006500"
 medias:
   image:
@@ -505,6 +529,7 @@ generals:
       - deb
       - rpm
       - msi
+    color: "#D0D0D0"
   file:
     file: true
     tablerIcons: square
@@ -516,8 +541,7 @@ generals:
   license:
     tablerIcons: license
     fileNames:
-      - License
-      - LICENSE
+      - license
     color: "#FFFFFF"
   key:
     fileExtensions: [key, pem]
@@ -553,6 +577,7 @@ repository-settings:
     tablerIcons: settings
     fileNames:
       - .env
+    color: "#858585"
   fixed-settings:
     tablerIcons: settings
     color: "#858585"
@@ -600,11 +625,11 @@ repository-settings:
     fileExtensions: [babelrc, babelrc.js, babelrc.json]
     fileNames: [babelrc.config.json]
     simpleIcons: babel
-    color: "#F9DC3E"
+    color: "#858585"
   git-config:
     fileNames: [.gitconfig]
     simpleIcons: git
-    color: "#FFFFFF"
+    color: "#858585"
   webpack:
     fileNames:
       - webpack.config.js
@@ -644,4 +669,4 @@ repository-settings:
       - webpack.config.staging.babel.js
       - webpack.config.staging.babel.ts
     simpleIcons: webpack
-    color: "#8DD6F9"
+    color: "#858585"
