@@ -1,7 +1,7 @@
 languages:
   abap:
     languageIds: [abap]
-    fileExtensions: [abap]
+    fileExtensions: [abp]
     simpleIcons: sap
     color: "#5ccaef"
   latex:
@@ -21,17 +21,17 @@ languages:
     color: "#b3a19f"
   c:
     languageIds: [c, "objective-c"]
-    fileExtensions: [c]
+    fileExtensions: [c, h]
     simpleIcons: c
     color: "#C5D0DD"
   cpp:
     languageIds: [cpp, "objective-cpp"]
-    fileExtensions: [cpp]
+    fileExtensions: [cpp, hpp]
     simpleIcons: cplusplus
     color: "#0094FF"
   csharp:
     languageIds: [csharp]
-    fileExtensions: [cs]
+    fileExtensions: [cs, csx]
     simpleIcons: csharp
     color: "#239120"
   css:
@@ -43,7 +43,8 @@ languages:
     languageIds: [dockerfile]
     fileExtensions: [dockerfile, Dockerfile]
     fileNames:
-      - ".dockerignore"
+      - docker-compose.yaml
+      - docker-compose.aml
     simpleIcons: docker
     color: "#2496ED"
   git:
@@ -60,10 +61,6 @@ languages:
     fileExtensions: [groovy]
     simpleIcons: groovy
     color: "#4298B8"
-  # handlebars:
-  #   languageIds: [handlebars]
-  #   simpleIcons: handlebars
-  #   color: ""
   html:
     languageIds: [html]
     fileExtensions: [html, xhtml]
@@ -88,15 +85,6 @@ languages:
     fileExtensions: [jsx]
     simpleIcons: react
     color: "#61DAFB"
-  webpack:
-    fileNames:
-      - webpack.config.js
-    simpleIcons: webpack
-    color: "#8DD6F9"
-  # less:
-  #   languageIds: [less]
-  #   simpleIcons: less
-  #   color: ""
   lua:
     languageIds: [lua]
     fileExtensions: [lua]
@@ -112,14 +100,6 @@ languages:
     fileExtensions: [php]
     simpleIcons: php
     color: "#777BB4"
-  # plaintext:
-  #   languageIds: [plaintext]
-  #   simpleIcons: plaintext
-  #   color: ""
-  # jade:
-  #   languageIds: [jade]
-  #   simpleIcons: jade
-  #   color: ""
   python:
     languageIds: [python]
     fileExtensions: [py, py3, cython]
@@ -154,10 +134,6 @@ languages:
     fileExtensions: [scss]
     simpleIcons: sass
     color: "#CC6699"
-  # shaderlab:
-  #   languageIds: [shaderlab]
-  #   simpleIcons: shaderlab
-  #   color: ""
   swift:
     languageIds: [swift]
     fileExtensions: [swift]
@@ -166,14 +142,8 @@ languages:
   typescript:
     languageIds: [typescript]
     fileExtensions: [ts]
-    fileNames:
-      - "tsconfig.json"
     simpleIcons: typescript
     color: "#007ACC"
-  # vb:
-  #   languageIds: [vb]
-  #   simpleIcons: vb
-  #   color: ""
   kubernetes:
     folderNames:
       - kustomization.yaml
@@ -183,8 +153,13 @@ languages:
     fileExtensions:
       - vim
       - vimrc
+      - gvimrc
     simpleIcons: vim
     color: "#019733"
+  emacs:
+    fileExtensions: [el, elc]
+    simpleIcons: gnuemacs
+    color: "#7F5AB6"
   terraform:
     simpleIcons: terraform
     color: "#623CE4"
@@ -197,6 +172,66 @@ languages:
     fileExtensions: [applescript]
     simpleIcons: apple
     color: "#999999"
+  dart:
+    languageIds: [dart]
+    fileExtensions: [dart]
+    simpleIcons: dart
+    color: "#0175C2"
+  elixir:
+    languageIds: [elixir]
+    fileExtensions: [ex, exs]
+    simpleIcons: elixir
+    color: "#9975ad"
+  erlang:
+    languageIds: [erlang]
+    fileExtensions: [erl]
+    simpleIcons: erlang
+    color: "#7F5AB6"
+  sql:
+    languageIds: [sql, pgsql]
+    fileExtensions: [sql]
+    tablerIcons: chart-donut
+    color: "#68a3bf"
+  graphql:
+    languageIds: [graphql]
+    fileExtensions: [gql, graphql]
+    simpleIcons: graphql
+    color: "#E10098"
+  haskell:
+    languageIds: [haskell, "literate haskell"]
+    fileExtensions: [hs]
+    simpleIcons: haskell
+    color: "#5D4F85"
+  jinja:
+    languageIds: [jinja]
+    fileExtensions: [jinja]
+    simpleIcons: jinja
+    color: "#B41717"
+  kotlin:
+    languageIds: [ktlin]
+    fileExtensions: [kt]
+    simpleIcons: kotlin
+    color: "#0095D5"
+  ocalml:
+    languageIds: [ocaml]
+    fileExtensions: [ml]
+    simpleIcons: ocaml
+    color: "#EC6813"
+  scala:
+    languageIds: [scala]
+    fileExtensions: [scala]
+    simpleIcons: scala
+    color: "#DC322F"
+  vue:
+    languageIds: [vue]
+    fileExtensions: [vue]
+    simpleIcons: vue-dot-js
+    color: "#4FC08D"
+  webassembly:
+    languageIds: [wasm, wat]
+    fileExtensions: [wasm]
+    simpleIcons: webassembly
+    color: "#654FF0"
 services:
   circleci:
     fileNames:
@@ -214,6 +249,20 @@ services:
     fileExtensions: [appveyor.yml]
     simpleIcons: appveyor
     color: "#00B3E0"
+  azure-pipeline:
+    fileNames: [azure-pipeline.yml, .vsts-ci.yml]
+    languageIds: [azure-pipeline]
+    simpleIcons: azurepipelines
+    color: "#2560E0"
+  gitlab:
+    fileNames:
+      - .gitlab-ci.yml
+    simpleIcons: gitlab
+    color: "#FCA121"
+  travisci:
+    fileNames: [.travis.yml]
+    simpleIcons: travisci
+    color: "#3EAAAF"
 packages:
   package:
     tablerIcons: package
@@ -229,6 +278,13 @@ packages:
       - go.sum
       # Ruby
       - Gemfile
+      # Visual Studio
+      - csproj
+      - vbproj
+      - fsproj
+      - vcxproj
+      - njsproj
+      - sln
     languageIds:
       - gem
     color: "#339933"
@@ -243,21 +299,58 @@ packages:
       # Go
       - go.sum
     color: "#006500"
-images:
+medias:
   image:
     tablerIcons: photo
     fileExtensions:
       - png
+      - eps
       - svg
       - jpeg
       - jpg
       - gif
       - bmp
+      - ico
+    color: "#e7dc60"
+  psd:
+    fileExtensions: [psd]
+    simpleIcons: adobephotoshop
     color: "#e7dc60"
   svg:
     simpleIcons: svg
     fileExtensions:
       - svg
+    color: "#e7dc60"
+  sound:
+    fileExtensions:
+      - aac
+      - mp3
+      - m3a
+      - wav
+      - ogg
+      - flac
+    tablerIcons: music
+    color: "#e7dc60"
+  font:
+    fileExtensions: [ttf, otf, woff, woff2 eot, pfa, pfb, sfd]
+    tablerIcons: typography
+    color: "#e7dc60"
+  movie:
+    fileExtensions:
+      - amv
+      - avi
+      - flv
+      - m3v
+      - mkv
+      - mov
+      - mp4
+      - mpe
+      - mpeg
+      - mpeg2
+      - ogv
+      - wmv
+      - web
+    tablerIcons: typography
     color: "#e7dc60"
 data:
   json:
@@ -270,6 +363,11 @@ data:
     fileExtensions: [yaml, yml]
     tablerIcons: braces
     color: "#FFFFFF"
+  toml:
+    languageIds: [toml]
+    fileExtensions: [toml]
+    tablerIcons: braces
+    color: "#FFFFFF"
   xml:
     languageIds: [xml]
     fileExtensions: [xml]
@@ -279,6 +377,26 @@ data:
     languageIds: [csv, tsv]
     fileExtensions: [csv, tsv]
     tablerIcons: list
+    color: "#FFFFFF"
+  excel:
+    fileExtensions: [xlsx, xls, xlsm, ods, tods]
+    simpleIcons: microsoftexcel
+    color: "#FFFFFF"
+  geo:
+    fileExtensions: [geojson, kml, map]
+    tablerIcons: world
+    color: "#FFFFFF"
+  uml:
+    fileExtensions: [plantum]
+    tablerIcons: sitemap
+    color: "#FFFFFF"
+  drawio:
+    fileExtensions: [drawio]
+    tablerIcons: sitemap
+    color: "#FFFFFF"
+  sqlite:
+    fileExtensions: [splite, sqlite3, db3]
+    simpleIcons: sqlite
     color: "#FFFFFF"
 scripts:
   shellscript:
@@ -290,6 +408,16 @@ scripts:
   bat:
     languageIds: [bat]
     fileExtensions: [bat]
+    tablerIcons: terminal-2
+    color: "#5391FE"
+  fish:
+    languageIds: [fish]
+    fileExtensions: [fish]
+    tablerIcons: terminal-2
+    color: "#5391FE"
+  xonsh:
+    languageIds: [xsh]
+    fileExtensions: [xsh]
     tablerIcons: terminal-2
     color: "#5391FE"
   powershell:
@@ -306,12 +434,42 @@ builders:
   ansible:
     languageIds: [ansible]
     simpleIcons: ansible
-    color: "#EE0000"
+    color: "#ff9693"
+  gradle:
+    fileNames: [build.gradle, build.gradle.kts]
+    simpleIcons: gradle
+    color: "#ff9693"
+  gulp:
+    fileNames:
+      - gulpfile.js
+      - gulpfile.ts
+      - gulpfile.babel.js
+      - gulpfile.babel.ts
+      - gulpfile.esm.js
+      - gulpfile.esm.ts
+    simpleIcons: gulp
+    color: "#ff9693"
+  grunt:
+    fileNames:
+      - gruntfile.js
+      - gruntfile.ts
+      - gruntfile.babel.js
+      - gruntfile.tbabel.s
+    simpleIcons: grunt
+    color: "#ff9693"
+  vagrant:
+    fileNames: [vagrantfile]
+    simpleIcons: vagrant
+    color: "#ff9693"
 generals:
   markdown:
     languageIds: [markdown]
     fileExtensions: [md, markdown]
     tablerIcons: info-circle
+    color: "#FFFFFF"
+  pdf:
+    fileExtensions: [pdf]
+    tablerIcons: file-invoice
     color: "#FFFFFF"
   diff:
     languageIds: [diff, patch]
@@ -323,17 +481,6 @@ generals:
     fileExtensions:
       - log
     color: "#D0D0D0"
-  setting:
-    tablerIcons: settings
-    languageIds: [ini]
-    fileExtensions:
-      - envrc
-      - plist
-      - conf
-    fileNames:
-      - .terraform-version
-      - .env
-    color: "#FFFFFF"
   compress:
     tablerIcons: box
     fileExtensions:
@@ -351,6 +498,13 @@ generals:
       - rar
       - 7z
     color: "#D0D0D0"
+  compress-package:
+    tablerIcons: box
+    fileExtensions:
+      - pkg
+      - deb
+      - rpm
+      - msi
   file:
     file: true
     tablerIcons: square
@@ -365,12 +519,40 @@ generals:
       - License
       - LICENSE
     color: "#FFFFFF"
+  key:
+    fileExtensions: [key, pem]
+    tablerIcons: key
+    color: "#FFFFFF"
+  certificate:
+    fileExtensions: [csr, crt]
+    tablerIcons: file-certificate
+    color: "#FFFFFF"
+  setting:
+    tablerIcons: settings
+    languageIds: [ini]
+    fileExtensions:
+      - envrc
+      - plist
+      - conf
+      - config
+      - properties
+    color: "#FFFFFF"
 repository-settings:
   vscode-settings:
     simpleIcons: visualstudiocode
     color: "#858585"
     fileNames:
       - .vscodeignore
+  nodejs-settings:
+    simpleIcons: node-dot-js
+    color: "#858585"
+    fileNames:
+      - .node-version
+      - .nvmrc
+  repository-setting:
+    tablerIcons: settings
+    fileNames:
+      - .env
   fixed-settings:
     tablerIcons: settings
     color: "#858585"
@@ -387,9 +569,79 @@ repository-settings:
       - ".dockerignore"
     simpleIcons: docker
     color: "#858585"
-others:
-  sql:
-    languageIds: [sql]
-    fileExtensions: [sql]
-    tablerIcons: chart-donut
-    color: "#68a3bf"
+  babel-ignore:
+    fileNames: [.babelignore]
+    simpleIcons: babel
+    color: "#858585"
+  git-repository-settings:
+    fileNames: [.gitkeep, .gitmodules, .gitattribute]
+    simpleIcons: git
+    color: "#858585"
+  terraform-setting:
+    fileNames:
+      - .terraform-version
+    simpleIcons: terraform
+    color: "#858585"
+  prettier:
+    fileNames:
+      - .prettierrc
+      - .prettierrc.js
+      - .prettierrc.ts
+      - prettier.config.js
+      - prettier.config.ts
+      - .prettierignore
+    simpleIcons: prettier
+    color: "#858585"
+  typescript:
+    fileNames: [tsconfig.json]
+    simpleIcons: typescript
+    color: "#858585"
+  babel:
+    fileExtensions: [babelrc, babelrc.js, babelrc.json]
+    fileNames: [babelrc.config.json]
+    simpleIcons: babel
+    color: "#F9DC3E"
+  git-config:
+    fileNames: [.gitconfig]
+    simpleIcons: git
+    color: "#FFFFFF"
+  webpack:
+    fileNames:
+      - webpack.config.js
+      - webpack.config.ts
+      - webpack.config.babel.js
+      - webpack.config.babel.ts
+      - webpack.config.base.js
+      - webpack.config.base.ts
+      - webpack.config.base.babel.js
+      - webpack.config.base.babel.ts
+      - webpack.config.common.js
+      - webpack.config.common.ts
+      - webpack.config.common.babel.js
+      - webpack.config.common.babel.ts
+      - webpack.config.dev.js
+      - webpack.config.dev.ts
+      - webpack.config.dev.babel.js
+      - webpack.config.dev.babel.ts
+      - webpack.config.development.js
+      - webpack.config.development.ts
+      - webpack.config.development.babel.js
+      - webpack.config.development.babel.ts
+      - webpack.config.prod.js
+      - webpack.config.prod.ts
+      - webpack.config.prod.babel.js
+      - webpack.config.prod.babel.ts
+      - webpack.config.production.js
+      - webpack.config.production.ts
+      - webpack.config.production.babel.js
+      - webpack.config.production.babel.ts
+      - webpack.config.test.js
+      - webpack.config.test.ts
+      - webpack.config.test.babel.js
+      - webpack.config.test.babel.ts
+      - webpack.config.staging.js
+      - webpack.config.staging.ts
+      - webpack.config.staging.babel.js
+      - webpack.config.staging.babel.ts
+    simpleIcons: webpack
+    color: "#8DD6F9"
