@@ -1,8 +1,9 @@
 {
   "name": "high-contrast-icons",
   "displayName": "High Contrast Icons",
-  "description": "icons for high contrast themes",
-  "license": "apache 2.0",
+  "description": "Icons for High Contrast Themes",
+  "icon": "icon.png",
+  "license": "MIT",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.49.0"
@@ -40,7 +41,7 @@
   "scripts": {
     "build": "run-s build:icons",
     "build:icons": "ts-node build.ts",
-    "build:prettier": "prettier -w fileicons/definitions.json definitions.html"
+    "build:prettier": "prettier -w dark/manifest.json light/manifest.json"
   },
   "dependencies": {}
 }
