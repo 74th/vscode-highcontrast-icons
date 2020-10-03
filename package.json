@@ -1,5 +1,6 @@
 {
   "name": "high-contrast-icons",
+  "publisher": "74th",
   "displayName": "High Contrast Icons",
   "description": "Icons for High Contrast Themes",
   "icon": "icon.png",
@@ -11,6 +12,10 @@
   "categories": [
     "Themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/74th/vscode-highcontrast-icons"
+  },
   "contributes": {
     "iconThemes": [
       {
