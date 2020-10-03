@@ -185,6 +185,8 @@ async function main() {
                 sampleFileName = `${name}.${def.fileExtensions[0]}`;
             } else if (def.fileNames) {
                 sampleFileName = def.fileNames[0];
+            } else if (def.file) {
+                sampleFileName = "file";
             }
             if (sampleFileName.length) {
                 await fs.writeFile(path.join("samples", groupName, sampleFileName), name);

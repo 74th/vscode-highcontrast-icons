@@ -1,4 +1,4 @@
-languages:
+1_languages:
   abap:
     languageIds: [abap]
     fileExtensions: [abp]
@@ -232,7 +232,7 @@ languages:
     fileExtensions: [wasm]
     simpleIcons: webassembly
     color: "#654FF0"
-services:
+5_services:
   circleci:
     fileNames:
       - circle.yml
@@ -263,7 +263,7 @@ services:
     fileNames: [.travis.yml]
     simpleIcons: travisci
     color: "#3EAAAF"
-packages:
+2_packages:
   package-npm:
     fileNames:
       - package.json
@@ -323,7 +323,7 @@ packages:
       - Gemfile.lock
     tablerIcons: package
     color: "#006500"
-medias:
+4_medias:
   image:
     tablerIcons: photo
     fileExtensions:
@@ -376,7 +376,7 @@ medias:
       - web
     tablerIcons: typography
     color: "#e7dc60"
-data:
+4_data:
   json:
     languageIds: [json, jsonc]
     fileExtensions: [json, jsonc]
@@ -422,7 +422,7 @@ data:
     fileExtensions: [splite, sqlite3, db3]
     simpleIcons: sqlite
     color: "#FFFFFF"
-scripts:
+4_scripts:
   shellscript:
     languageIds: [shellscript]
     fileExtensions: [sh, bash]
@@ -449,7 +449,7 @@ scripts:
     simpleIcons: powershell
     fileExtensions: [ps]
     color: "#5391FE"
-builders:
+2_builders:
   makefile:
     languageIds: [makefile]
     fileNames: [Makefile]
@@ -485,7 +485,7 @@ builders:
     fileNames: [vagrantfile]
     simpleIcons: vagrant
     color: "#ff9693"
-generals:
+3_generals:
   markdown:
     languageIds: [markdown]
     fileExtensions: [md, markdown]
@@ -561,7 +561,7 @@ generals:
       - config
       - properties
     color: "#FFFFFF"
-repository-settings:
+2_repository-settings:
   vscode-settings:
     simpleIcons: visualstudiocode
     color: "#858585"
@@ -617,7 +617,7 @@ repository-settings:
       - .prettierignore
     simpleIcons: prettier
     color: "#858585"
-  typescript:
+  typescript-config:
     fileNames: [tsconfig.json]
     simpleIcons: typescript
     color: "#858585"
