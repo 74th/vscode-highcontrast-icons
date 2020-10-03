@@ -6,7 +6,7 @@ Recommended Theme: [Monokai Charcoal high contrast](https://marketplace.visualst
 
 ![dark.png](dark.png)
 
-## feature
+## Features
 
 - Match for High Contrast Themes
 - Repository Settings are not colored (.gitignore, .editorconfig, ...)
@@ -31,11 +31,25 @@ Recommended Theme: [Monokai Charcoal high contrast](https://marketplace.visualst
 
 ![light.png](light.png)
 
-## Materials
+## Using Materials
 
 - [Simple Icons](https://github.com/simple-icons/simple-icons) (CC0 1.0 Unicersal)
 - [Table Icons](https://github.com/tabler/tabler-icons) (MIT License)
+- [vscode-icons (List of supported file icons)](https://github.com/vscode-icons/vscode-icons/wiki/ListOfFiles)
+
+## Contributing
+
+Please do not edit SVG files in dark/light directory.
+This theme is generated from [definitions.yaml](definitions.yaml) with [build.ts](build.ts).
+
+### how to build themes
+
+```
+yarn build
+```
 
 ## License
 
-MIT License
+Source codes and manifest file are MIT License.
+
+Branded icons are licensed under their copyright license.
