@@ -637,6 +637,11 @@
     simpleIcons: typescript
     color: "#858585"
     lightColor: "#b9b9b9"
+  javascript-config:
+    fileNames: [.eslintrc.js, .eslintignore]
+    simpleIcons: javascript
+    color: "#858585"
+    lightColor: "#b9b9b9"
   babel:
     fileExtensions: [babelrc, babelrc.js, babelrc.json]
     fileNames: [babelrc.config.json]

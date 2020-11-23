@@ -5,7 +5,7 @@
   "description": "Icons for High Contrast Themes",
   "icon": "icon.png",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/74th/vscode-highcontrast-icons",
   "engines": {
     "vscode": "^1.49.0"
@@ -53,5 +53,10 @@
     "build:icons": "ts-node build.ts",
     "build:prettier": "prettier -w dark/manifest.json light/manifest.json"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "__metadata": {
+    "id": "59c4d4cb-768b-4551-a0ac-3d6f3a6896b8",
+    "publisherDisplayName": "74th",
+    "publisherId": "3cef02ed-b83e-4b08-b16f-d427ad5fa333"
+  }
 }
