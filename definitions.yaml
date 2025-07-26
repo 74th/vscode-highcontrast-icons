@@ -421,6 +421,10 @@
     fileExtensions: [splite, sqlite3, db3]
     simpleIcons: sqlite
     color: "#FFFFFF"
+  http:
+    fileExtensions: [http]
+    tablerIcons: tool
+    color: "#FFFFFF"
 4_scripts:
   shellscript:
     languageIds: [shellscript]
@@ -450,7 +454,7 @@
     color: "#5391FE"
   githubcopilot:
     languageIds: [prompt, instractions, chatmode]
-    fileNames: [copilot-instructions.md]
+    fileNames: [copilot-instructions.md, *.instructions.md, *.prompt.md]
     simpleIcons: githubcopilot
     color: "#5391FE"
   claude:
@@ -619,6 +623,12 @@
     simpleIcons: git
     color: "#858585"
     lightColor: "#b9b9b9"
+  python-setting:
+    fileNames:
+      - .python-version
+    simpleIcons: python
+    color: "#858585"
+    lightColor: "#b9b9b9"
   terraform-setting:
     fileNames:
       - .terraform-version
@@ -655,6 +665,11 @@
   git-config:
     fileNames: [.gitconfig]
     simpleIcons: git
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  copilot-config:
+    fileNames: [.copilotignore]
+    simpleIcons: githubcopilot
     color: "#858585"
     lightColor: "#b9b9b9"
   webpack:
