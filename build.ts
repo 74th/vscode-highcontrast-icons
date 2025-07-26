@@ -5,6 +5,8 @@ import * as color from "color-convert";
 import { promises as fs } from "fs";
 import * as child_process from "child_process";
 
+const prettier = require("prettier");
+
 interface FileIconSet {
     iconDefinitions: {
         [index: string]: {
@@ -81,6 +83,23 @@ function dark2light(colorCode: string): string {
     const lightHsv = [darkHsv[0], darkHsv[2], darkHsv[1]];
     const lightHex = color.hsv.hex([lightHsv[0], lightHsv[1], lightHsv[2]]);
     return `#${lightHex}`;
+}
+
+async function formatJson(obj: any): Promise<string> {
+    const jsonString = JSON.stringify(obj);
+    try {
+        return await prettier.format(jsonString, {
+            parser: "json",
+            tabWidth: 2,
+            useTabs: false,
+            semi: false,
+            singleQuote: false,
+            trailingComma: "none"
+        });
+    } catch (error) {
+        console.warn("Prettierでのフォーマットに失敗しました。デフォルトのJSONフォーマットを使用します:", error);
+        return JSON.stringify(obj, null, 2);
+    }
 }
 
 async function main() {
@@ -185,8 +204,9 @@ async function main() {
     }
 
 
-    await fs.writeFile("dark/manifest.json", JSON.stringify(manifest));
-    await fs.writeFile("light/manifest.json", JSON.stringify(manifest));
+    const formattedJson = await formatJson(manifest);
+    await fs.writeFile("dark/manifest.json", formattedJson);
+    await fs.writeFile("light/manifest.json", formattedJson);
 }
 
 const p = main();
