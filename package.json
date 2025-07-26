@@ -5,7 +5,7 @@
   "description": "Icons for High Contrast Themes",
   "icon": "icon.png",
   "license": "MIT",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "homepage": "https://github.com/74th/vscode-highcontrast-icons",
   "engines": {
     "vscode": "^1.49.0"
