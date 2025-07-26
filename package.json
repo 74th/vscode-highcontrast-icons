@@ -38,6 +38,7 @@
   "devDependencies": {
     "@types/color-convert": "^1.9.0",
     "@types/xml": "^1.0.5",
+    "@vscode/vsce": "^3.6.0",
     "color-convert": "^2.0.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
@@ -51,9 +52,13 @@
   "scripts": {
     "build": "run-s build:icons",
     "build:icons": "ts-node build.ts",
-    "build:prettier": "prettier -w dark/manifest.json light/manifest.json"
+    "build:prettier": "prettier -w dark/manifest.json light/manifest.json",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version"
   },
-  "dependencies": {},
   "__metadata": {
     "id": "59c4d4cb-768b-4551-a0ac-3d6f3a6896b8",
     "publisherDisplayName": "74th",
