@@ -143,7 +143,7 @@
     simpleIcons: typescript
     color: "#007ACC"
   kubernetes:
-    folderNames:
+    fileNames:
       - kustomization.yaml
     simpleIcons: "kubernetes"
     color: "#326CE5"
@@ -454,7 +454,11 @@
     color: "#5391FE"
   githubcopilot:
     languageIds: [prompt, instractions, chatmode]
-    fileNames: [copilot-instructions.md, "*.instructions.md", "*.prompt.md"]
+    fileExtensions:
+      - instructions.md
+      - prompt.md
+      - chatmode.md
+    fileNames: [copilot-instructions.md]
     simpleIcons: githubcopilot
     color: "#5391FE"
   claude:

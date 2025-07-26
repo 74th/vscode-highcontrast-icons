@@ -88,7 +88,7 @@ function dark2light(colorCode: string): string {
 async function formatJson(obj: any): Promise<string> {
     const jsonString = JSON.stringify(obj);
     try {
-        return await prettier.format(jsonString, { 
+        return await prettier.format(jsonString, {
             parser: "json",
             tabWidth: 2,
             useTabs: false,
