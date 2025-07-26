@@ -1,0 +1,81 @@
+name: Publish VS Code Extension
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Set up Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Build extension
+      run: |
+        npm run build
+        git add .
+        git commit -m "update icons"
+
+    - name: Bump version
+      id: version
+      run: |
+        # Get current version
+        CURRENT_VERSION=$(node -p "require('./package.json').version")
+        echo "Current version: $CURRENT_VERSION"
+
+        # Bump patch version
+        npm run version:patch
+
+        # Get new version
+        NEW_VERSION=$(node -p "require('./package.json').version")
+        echo "New version: $NEW_VERSION"
+        echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+        # Configure git
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+        # Commit version bump
+        git add package.json
+        git commit -m "Bump version to $NEW_VERSION"
+        git push
+
+    - name: Package extension
+      run: npm run package
+
+    - name: Publish to VS Code Marketplace
+      run: npm run publish
+      env:
+        VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ steps.version.outputs.new_version }}
+        name: Release v${{ steps.version.outputs.new_version }}
+        body: |
+          Automated release of High Contrast Icons extension v${{ steps.version.outputs.new_version }}
+        draft: false
+        prerelease: false

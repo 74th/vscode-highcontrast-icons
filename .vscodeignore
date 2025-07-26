@@ -6,3 +6,11 @@ node_modules/
 tabler-icons
 simple-icons
 samples
+PUBLISHING.md
+build.ts
+tsconfig.json
+definitions.yaml
+definition.schema.json
+yarn-error.log
+yarn.lock
+.github/
