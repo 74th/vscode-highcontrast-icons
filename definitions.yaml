@@ -454,7 +454,7 @@
     color: "#5391FE"
   githubcopilot:
     languageIds: [prompt, instractions, chatmode]
-    fileNames: [copilot-instructions.md, *.instructions.md, *.prompt.md]
+    fileNames: [copilot-instructions.md, "*.instructions.md", "*.prompt.md"]
     simpleIcons: githubcopilot
     color: "#5391FE"
   claude:
