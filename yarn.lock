@@ -284,6 +284,11 @@
   resolved "https://registry.npmjs.org/@sindresorhus/merge-streams/-/merge-streams-2.3.0.tgz"
   integrity sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==
 
+"@tabler/icons@^3.34.1":
+  version "3.34.1"
+  resolved "https://registry.npmjs.org/@tabler/icons/-/icons-3.34.1.tgz"
+  integrity sha512-9gTnUvd7Fd/DmQgr3MKY+oJLa1RfNsQo8c/ir3TJAWghOuZXodbtbVp0QBY2DxWuuvrSZFys0HEbv1CoiI5y6A==
+
 "@textlint/ast-node-types@15.2.1":
   version "15.2.1"
   resolved "https://registry.npmjs.org/@textlint/ast-node-types/-/ast-node-types-15.2.1.tgz"
@@ -369,10 +374,10 @@
     https-proxy-agent "^7.0.0"
     tslib "^2.6.2"
 
-"@vscode/vsce-sign-linux-x64@2.0.5":
+"@vscode/vsce-sign-darwin-arm64@2.0.5":
   version "2.0.5"
-  resolved "https://registry.npmjs.org/@vscode/vsce-sign-linux-x64/-/vsce-sign-linux-x64-2.0.5.tgz"
-  integrity sha512-XLT0gfGMcxk6CMRLDkgqEPTyG8Oa0OFe1tPv2RVbphSOjFWJwZgK3TYWx39i/7gqpDHlax0AP6cgMygNJrA6zg==
+  resolved "https://registry.npmjs.org/@vscode/vsce-sign-darwin-arm64/-/vsce-sign-darwin-arm64-2.0.5.tgz"
+  integrity sha512-z2Q62bk0ptADFz8a0vtPvnm6vxpyP3hIEYMU+i1AWz263Pj8Mc38cm/4sjzxu+LIsAfhe9HzvYNS49lV+KsatQ==
 
 "@vscode/vsce-sign@^2.0.0":
   version "2.0.6"
@@ -2146,10 +2151,10 @@ simple-get@^4.0.0:
     once "^1.3.1"
     simple-concat "^1.0.0"
 
-simple-icons@^3.9.0:
-  version "3.9.0"
-  resolved "https://registry.npmjs.org/simple-icons/-/simple-icons-3.9.0.tgz"
-  integrity sha512-/xmuSTw1zovEXCRJIBLlOS9naC41yI4Uk5RmZU1DEc7qu0BrnNkMNtoOvOaj+Vrh4Wzlz6oS0o+sMfDvI9IoYQ==
+simple-icons@^15.7.0:
+  version "15.7.0"
+  resolved "https://registry.npmjs.org/simple-icons/-/simple-icons-15.7.0.tgz"
+  integrity sha512-buN9moq1lh6Tujgr2Nc3Vgi4naE0IOKon48G42aLWqSNxjWJlUx+YSqobKcefom4uv1xyAVFcjQOJIhBJvXjGw==
 
 slash@^5.1.0:
   version "5.1.0"
@@ -2360,11 +2365,6 @@ table@^6.9.0:
     slice-ansi "^4.0.0"
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
-
-tabler-icons@^1.28.0:
-  version "1.28.0"
-  resolved "https://registry.npmjs.org/tabler-icons/-/tabler-icons-1.28.0.tgz"
-  integrity sha512-uJSA6JzMJ+yUqDOcgzPXDs8tr8wqI0H19qv7NHyLh6CuRkk+RxJP4Zqp52mX/fr2OTN3Zx9OIMHXJbskWQSV8g==
 
 tar-fs@^2.0.0:
   version "2.1.3"

@@ -29,15 +29,10 @@
     fileExtensions: [cpp, hpp]
     simpleIcons: cplusplus
     color: "#0094FF"
-  csharp:
-    languageIds: [csharp]
-    fileExtensions: [cs, csx]
-    simpleIcons: csharp
-    color: "#239120"
   css:
     languageIds: [css, xsl]
     fileExtensions: [css, xsl]
-    simpleIcons: css3
+    simpleIcons: css
     color: "#1572B6"
   dockerfile:
     languageIds: [dockerfile]
@@ -60,7 +55,7 @@
   groovy:
     languageIds: [groovy]
     fileExtensions: [groovy]
-    simpleIcons: groovy
+    simpleIcons: apachegroovy
     color: "#4298B8"
   html:
     languageIds: [html]
@@ -70,11 +65,11 @@
   java:
     languageIds: [java]
     fileExtensions: [java]
-    simpleIcons: java
+    simpleIcons: openjdk
     color: "#34a7ca"
   java-package:
     fileExtensions: [class, jar]
-    simpleIcons: java
+    simpleIcons: openjdk
     color: "#00597c"
     lightColor: "#00597c"
   javascript:
@@ -118,9 +113,9 @@
     simpleIcons: r
     color: "#276DC3"
   dotnet:
-    languageIds: [razor, fsharp]
-    fileExtensions: [cshtml, vbhtml]
-    simpleIcons: dot-net
+    languageIds: [razor, fsharp, csharp]
+    fileExtensions: [cshtml, vbhtml, cs, csx]
+    simpleIcons: dotnet
     color: "#aa7bdf"
   ruby:
     languageIds: [ruby]
@@ -229,7 +224,7 @@
   vue:
     languageIds: [vue]
     fileExtensions: [vue]
-    simpleIcons: vue-dot-js
+    simpleIcons: vuedotjs
     color: "#4FC08D"
   webassembly:
     languageIds: [wasm, wat]
@@ -256,7 +251,7 @@
   azure-pipeline:
     fileNames: [azure-pipeline.yml, .vsts-ci.yml]
     languageIds: [azure-pipeline]
-    simpleIcons: azurepipelines
+    tablerIcons: arrow-iteration
     color: "#2560E0"
   gitlab:
     fileNames:
@@ -342,7 +337,7 @@
     color: "#e7dc60"
   psd:
     fileExtensions: [psd]
-    simpleIcons: adobephotoshop
+    tablerIcons: photo
     color: "#e7dc60"
   svg:
     simpleIcons: svg
@@ -408,7 +403,7 @@
     color: "#FFFFFF"
   excel:
     fileExtensions: [xlsx, xls, xlsm, ods, tods]
-    simpleIcons: microsoftexcel
+    tablerIcons: file-spreadsheet
     color: "#FFFFFF"
   geo:
     fileExtensions: [geojson, kml, map]
@@ -450,7 +445,7 @@
     color: "#5391FE"
   powershell:
     languageIds: [powershell]
-    simpleIcons: powershell
+    tablerIcons: brand-powershell
     fileExtensions: [ps]
     color: "#5391FE"
 2_builders:
@@ -567,13 +562,13 @@
     color: "#FFFFFF"
 2_repository-settings:
   vscode-settings:
-    simpleIcons: visualstudiocode
+    tablerIcons: settings
     color: "#858585"
     lightColor: "#b9b9b9"
     fileNames:
       - .vscodeignore
   nodejs-settings:
-    simpleIcons: node-dot-js
+    simpleIcons: nodedotjs
     color: "#858585"
     lightColor: "#b9b9b9"
     fileNames:

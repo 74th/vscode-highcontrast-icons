@@ -45,7 +45,7 @@ interface Definition {
 
 async function copySimpleIcon(name: string, icon: string, darkColor: string, lightColor?: string) {
 
-    const f = await fs.readFile(`simple-icons/icons/${icon}.svg`);
+    const f = await fs.readFile(`simple-icons/${icon}.svg`);
     const body = xml.xml2js(f.toString());
     const svg = body.elements[0] as xml.Element;
     const path = svg.elements![1] as xml.Element;
@@ -61,7 +61,7 @@ async function copySimpleIcon(name: string, icon: string, darkColor: string, lig
 }
 
 async function copyTablerIcon(name: string, icon: string, darkColor: string, lightColor?: string) {
-    const f = await fs.readFile(`tabler-icons/icons/${icon}.svg`);
+    const f = await fs.readFile(`tabler-icons/${icon}.svg`);
     const body = xml.xml2js(f.toString());
     const svg = body.elements[0] as xml.Element;
 
