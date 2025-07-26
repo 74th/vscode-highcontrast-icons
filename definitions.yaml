@@ -448,6 +448,15 @@
     tablerIcons: brand-powershell
     fileExtensions: [ps]
     color: "#5391FE"
+  githubcopilot:
+    languageIds: [prompt, instractions, chatmode]
+    fileNames: [copilot-instructions.md]
+    simpleIcons: githubcopilot
+    color: "#5391FE"
+  claude:
+    fileNames: [CLAUDE.md]
+    simpleIcons: claude
+    color: "#5391FE"
 2_builders:
   makefile:
     languageIds: [makefile]
