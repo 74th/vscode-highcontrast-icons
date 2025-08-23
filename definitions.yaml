@@ -267,6 +267,7 @@
     fileNames:
       - package.json
       - yarn.lock
+      - pnpm-lock.yaml
     tablerIcons: package
     color: "#339933"
   package-python:
