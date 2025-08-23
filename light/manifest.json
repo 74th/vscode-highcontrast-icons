@@ -311,6 +311,7 @@
     ".travis.yml": "_travisci",
     "package.json": "_package-npm",
     "yarn.lock": "_package-lockfile-npm",
+    "pnpm-lock.yaml": "_package-npm",
     "pyproject.toml": "_package-python",
     "poetry.lock": "_package-lockfile-python",
     "go.mod": "_package-go",
