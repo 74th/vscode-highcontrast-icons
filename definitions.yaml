@@ -82,6 +82,16 @@
     fileExtensions: [jsx]
     simpleIcons: react
     color: "#61DAFB"
+  svelte:
+    languageIds: [svelte]
+    fileExtensions: [svelte]
+    simpleIcons: svelte
+    color: "#FF3E00"
+  astro:
+    languageIds: [astro]
+    fileExtensions: [astro]
+    simpleIcons: astro
+    color: "##BC52EE"
   lua:
     languageIds: [lua]
     fileExtensions: [lua]
