@@ -91,7 +91,7 @@
     languageIds: [astro]
     fileExtensions: [astro]
     simpleIcons: astro
-    color: "##BC52EE"
+    color: "#BC52EE"
   lua:
     languageIds: [lua]
     fileExtensions: [lua]
