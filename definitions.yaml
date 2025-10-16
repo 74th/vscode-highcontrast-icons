@@ -612,6 +612,9 @@
     tablerIcons: settings
     fileNames:
       - .env
+      - .envrc
+      - .env_sample
+      - .envrc_sample
     color: "#858585"
     lightColor: "#b9b9b9"
   fixed-settings:
@@ -739,6 +742,7 @@
       - .go-version
       - .golangci.yaml
       - .golangci.yml
+      - .golangci-lint-version
     simpleIcons: go
     color: "#858585"
     lightColor: "#b9b9b9"
