@@ -353,6 +353,9 @@
     ".node-version": "_nodejs-settings",
     ".nvmrc": "_nodejs-settings",
     ".env": "_repository-setting",
+    ".envrc": "_repository-setting",
+    ".env_sample": "_repository-setting",
+    ".envrc_sample": "_repository-setting",
     ".editorconfig": "_fixed-settings",
     ".gitignore": "_git-ignore",
     ".gitmodules": "_git-repository-settings",
@@ -413,6 +416,7 @@
     ".go-version": "_go",
     ".golangci.yaml": "_go",
     ".golangci.yml": "_go",
+    ".golangci-lint-version": "_go",
     ".tool-versions": "_asdf",
     ".clineignore": "_cline"
   },
