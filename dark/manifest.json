@@ -123,7 +123,9 @@
     "_babel": { "iconPath": "babel.svg" },
     "_git-config": { "iconPath": "git-config.svg" },
     "_copilot-config": { "iconPath": "copilot-config.svg" },
-    "_webpack": { "iconPath": "webpack.svg" }
+    "_webpack": { "iconPath": "webpack.svg" },
+    "_asdf": { "iconPath": "asdf.svg" },
+    "_cline": { "iconPath": "cline.svg" }
   },
   "folderNames": {},
   "fileExtensions": {
@@ -407,7 +409,12 @@
     "webpack.config.staging.js": "_webpack",
     "webpack.config.staging.ts": "_webpack",
     "webpack.config.staging.babel.js": "_webpack",
-    "webpack.config.staging.babel.ts": "_webpack"
+    "webpack.config.staging.babel.ts": "_webpack",
+    ".go-version": "_go",
+    ".golangci.yaml": "_go",
+    ".golangci.yml": "_go",
+    ".tool-versions": "_asdf",
+    ".clineignore": "_cline"
   },
   "languageIds": {
     "abap": "_abap",
