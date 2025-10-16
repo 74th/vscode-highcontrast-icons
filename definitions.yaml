@@ -734,3 +734,23 @@
     simpleIcons: webpack
     color: "#858585"
     lightColor: "#b9b9b9"
+  go:
+    fileNames:
+      - .go-version
+      - .golangci.yaml
+      - .golangci.yml
+    simpleIcons: go
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  asdf:
+    fileNames:
+      - .tool-versions
+    tablerIcons: tool
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  cline:
+    fileNames:
+      - .clineignore
+    tablerIcons: robot
+    color: "#858585"
+    lightColor: "#b9b9b9"
