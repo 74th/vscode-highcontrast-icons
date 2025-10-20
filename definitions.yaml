@@ -737,7 +737,7 @@
     simpleIcons: webpack
     color: "#858585"
     lightColor: "#b9b9b9"
-  go:
+  go-tools:
     fileNames:
       - .go-version
       - .golangci.yaml
