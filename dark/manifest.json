@@ -124,6 +124,7 @@
     "_git-config": { "iconPath": "git-config.svg" },
     "_copilot-config": { "iconPath": "copilot-config.svg" },
     "_webpack": { "iconPath": "webpack.svg" },
+    "_go-tools": { "iconPath": "go-tools.svg" },
     "_asdf": { "iconPath": "asdf.svg" },
     "_cline": { "iconPath": "cline.svg" }
   },
@@ -413,10 +414,10 @@
     "webpack.config.staging.ts": "_webpack",
     "webpack.config.staging.babel.js": "_webpack",
     "webpack.config.staging.babel.ts": "_webpack",
-    ".go-version": "_go",
-    ".golangci.yaml": "_go",
-    ".golangci.yml": "_go",
-    ".golangci-lint-version": "_go",
+    ".go-version": "_go-tools",
+    ".golangci.yaml": "_go-tools",
+    ".golangci.yml": "_go-tools",
+    ".golangci-lint-version": "_go-tools",
     ".tool-versions": "_asdf",
     ".clineignore": "_cline"
   },
