@@ -647,6 +647,8 @@
   terraform-setting:
     fileNames:
       - .terraform-version
+      - .tfvars
+      - .lock.hcl
     simpleIcons: terraform
     color: "#858585"
     lightColor: "#b9b9b9"
@@ -726,5 +728,11 @@
       - webpack.config.staging.babel.js
       - webpack.config.staging.babel.ts
     simpleIcons: webpack
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  sample-file:
+    fileExtensions:
+      - .sample
+    tablerIcons: square
     color: "#858585"
     lightColor: "#b9b9b9"
