@@ -124,6 +124,7 @@
     "_git-config": { "iconPath": "git-config.svg" },
     "_copilot-config": { "iconPath": "copilot-config.svg" },
     "_webpack": { "iconPath": "webpack.svg" },
+    "_sample-file": { "iconPath": "sample-file.svg" },
     "_go-tools": { "iconPath": "go-tools.svg" },
     "_asdf": { "iconPath": "asdf.svg" },
     "_cline": { "iconPath": "cline.svg" }
@@ -303,7 +304,8 @@
     "properties": "_setting",
     "babelrc": "_babel",
     "babelrc.js": "_babel",
-    "babelrc.json": "_babel"
+    "babelrc.json": "_babel",
+    ".sample": "_sample-file"
   },
   "fileNames": {
     "docker-compose.yaml": "_dockerfile",
@@ -366,6 +368,8 @@
     ".gitattribute": "_git-repository-settings",
     ".python-version": "_python-setting",
     ".terraform-version": "_terraform-setting",
+    ".tfvars": "_terraform-setting",
+    ".lock.hcl": "_terraform-setting",
     ".prettierrc": "_prettier",
     ".prettierrc.js": "_prettier",
     ".prettierrc.ts": "_prettier",
