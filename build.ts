@@ -118,6 +118,9 @@ async function main() {
 
     const defGroupss = yaml.parse((await fs.readFile("definitions.yaml")).toString()) as { [index: string]: { [index: string]: Definition } };
 
+    // 重複チェック用のSet
+    const usedNames = new Set<string>();
+
     for (const groupName in defGroupss) {
         const defs = defGroupss[groupName];
 
@@ -128,6 +131,12 @@ async function main() {
         }
 
         for (const name in defs) {
+            // 名前の重複チェック
+            if (usedNames.has(name)) {
+                throw new Error(`重複するアイコン名が検出されました: "${name}"\nグループ "${groupName}" で既に使用されている名前です。`);
+            }
+
+            usedNames.add(name);
 
             console.log(name);
 

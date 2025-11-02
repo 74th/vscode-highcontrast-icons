@@ -291,6 +291,8 @@
       # Go
       - go.mod
       - go.sum
+      - go.work
+      - go.work.sum
     tablerIcons: package
     color: "#339933"
   package-ruby:
@@ -476,6 +478,10 @@
     fileNames: [CLAUDE.md]
     simpleIcons: claude
     color: "#5391FE"
+  agent:
+    fileNames: [AGENTS.md]
+    tablerIcons: robot
+    color: "#5391FE"
 2_builders:
   makefile:
     languageIds: [makefile]
@@ -606,6 +612,9 @@
     tablerIcons: settings
     fileNames:
       - .env
+      - .envrc
+      - .env_sample
+      - .envrc_sample
     color: "#858585"
     lightColor: "#b9b9b9"
   fixed-settings:
@@ -734,5 +743,26 @@
     fileExtensions:
       - .sample
     tablerIcons: square
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  go-tools:
+    fileNames:
+      - .go-version
+      - .golangci.yaml
+      - .golangci.yml
+      - .golangci-lint-version
+    simpleIcons: go
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  asdf:
+    fileNames:
+      - .tool-versions
+    tablerIcons: tool
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  cline:
+    fileNames:
+      - .clineignore
+    tablerIcons: robot
     color: "#858585"
     lightColor: "#b9b9b9"

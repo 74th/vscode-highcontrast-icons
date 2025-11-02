@@ -88,6 +88,7 @@
     "_powershell": { "iconPath": "powershell.svg" },
     "_githubcopilot": { "iconPath": "githubcopilot.svg" },
     "_claude": { "iconPath": "claude.svg" },
+    "_agent": { "iconPath": "agent.svg" },
     "_makefile": { "iconPath": "makefile.svg" },
     "_ansible": { "iconPath": "ansible.svg" },
     "_gradle": { "iconPath": "gradle.svg" },
@@ -122,7 +123,10 @@
     "_babel": { "iconPath": "babel.svg" },
     "_git-config": { "iconPath": "git-config.svg" },
     "_copilot-config": { "iconPath": "copilot-config.svg" },
-    "_webpack": { "iconPath": "webpack.svg" }
+    "_webpack": { "iconPath": "webpack.svg" },
+    "_go-tools": { "iconPath": "go-tools.svg" },
+    "_asdf": { "iconPath": "asdf.svg" },
+    "_cline": { "iconPath": "cline.svg" }
   },
   "folderNames": {},
   "fileExtensions": {
@@ -320,6 +324,8 @@
     "poetry.lock": "_package-lockfile-python",
     "go.mod": "_package-go",
     "go.sum": "_package-lockfile-go",
+    "go.work": "_package-go",
+    "go.work.sum": "_package-go",
     "gemfile": "_package-ruby",
     "Gemfile": "_package-ruby",
     "package-lock.json": "_package-lockfile-npm",
@@ -328,6 +334,7 @@
     ".bashrc": "_shellscript",
     "copilot-instructions.md": "_githubcopilot",
     "CLAUDE.md": "_claude",
+    "AGENTS.md": "_agent",
     "Makefile": "_makefile",
     "build.gradle": "_gradle",
     "build.gradle.kts": "_gradle",
@@ -347,6 +354,9 @@
     ".node-version": "_nodejs-settings",
     ".nvmrc": "_nodejs-settings",
     ".env": "_repository-setting",
+    ".envrc": "_repository-setting",
+    ".env_sample": "_repository-setting",
+    ".envrc_sample": "_repository-setting",
     ".editorconfig": "_fixed-settings",
     ".gitignore": "_git-ignore",
     ".gitmodules": "_git-repository-settings",
@@ -403,7 +413,13 @@
     "webpack.config.staging.js": "_webpack",
     "webpack.config.staging.ts": "_webpack",
     "webpack.config.staging.babel.js": "_webpack",
-    "webpack.config.staging.babel.ts": "_webpack"
+    "webpack.config.staging.babel.ts": "_webpack",
+    ".go-version": "_go-tools",
+    ".golangci.yaml": "_go-tools",
+    ".golangci.yml": "_go-tools",
+    ".golangci-lint-version": "_go-tools",
+    ".tool-versions": "_asdf",
+    ".clineignore": "_cline"
   },
   "languageIds": {
     "abap": "_abap",
