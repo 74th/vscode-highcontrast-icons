@@ -656,6 +656,8 @@
   terraform-setting:
     fileNames:
       - .terraform-version
+      - .tfstate
+      - .tfstate.backup
       - .tfvars
       - .lock.hcl
     simpleIcons: terraform
@@ -739,12 +741,6 @@
     simpleIcons: webpack
     color: "#858585"
     lightColor: "#b9b9b9"
-  sample-file:
-    fileExtensions:
-      - .sample
-    tablerIcons: square
-    color: "#858585"
-    lightColor: "#b9b9b9"
   go-tools:
     fileNames:
       - .go-version
@@ -764,5 +760,12 @@
     fileNames:
       - .clineignore
     tablerIcons: robot
+    color: "#858585"
+    lightColor: "#b9b9b9"
+  misc-file:
+    fileExtensions:
+      - .sample
+      - .backup
+    tablerIcons: square
     color: "#858585"
     lightColor: "#b9b9b9"
